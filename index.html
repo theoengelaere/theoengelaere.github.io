@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>CV - Théo Engelaere</title>
+</head>
+<body>
+    <header id = "header1">
+        <section id="headerName">
+            <h1>Théo Engelaere</h1>
+        </section>
+        <button id="menuMobileIcone" onclick="displayMobileMenu()"><img src="./img/menu.png" alt="MENU"></button>
+        <ul id="menu">
+            <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
+            <li><a href="#aProposDeMoi" onclick="closeMobileMenu()">A propos de moi</a></li>
+            <li><a href="#competences" onclick="closeMobileMenu()">Parcours</a></li>
+            <li><a href="#experience" onclick="closeMobileMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="closeMobileMenu()">Projets</a></li>
+            <li><a href="#viePerso" onclick="closeMobileMenu()">Vie Perso</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </header>
+
+    
+    <div id="mainContainer">
+        <section id="presentation" class="main">
+            <img src="img/photo.jpg" alt="photo" id="photo">
+            <section class="subSection">
+                <article>
+                    <h2>Je suis Théo Engelaere, étudiant en BUT Informatique.</h2>
+                    <p>Je projette de commencer ma carrière dans le développement d'applications</p>
+                </article>
+                <div id="buttons">
+                    <button class="principal" onclick="scrollToContact()">Contactez-moi <img src="./img/email.png" alt=""></button>
+                    <button class="principal" onclick="downloadCV()">Télécharez mon CV <img src="./img/telecharger.png" alt=""></button>
+                    <button class="reseaux" onclick="openLinkedIn()"><img src="./img/linkedin.png" alt="Lkin"></button>
+
+                </div>
+            </section>
+        </section>
+        <section id="aProposDeMoi" class="main">
+            <article>
+                <h1 class="title">A propos de moi</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </section>
+        <section id="competences" class="main">
+                <h1 class="title">Mes compétences</h1>
+                <section class="subSection" id="languages">
+                    <h2>Languages Info</h2>
+                    <div id="enumLanguages">
+                        <div class="bubbles">
+                            <div class="java">Java</div>
+                            <div class="sql">SQL</div>
+                            <div class="html">HTML/CSS</div>
+                            <div class="js">Javascript</div>
+                        </div>
+                        <div id="bars">
+                            <div class="bar" id="java"><div></div></div>
+                            <div class="bar" id="sql"><div></div></div>
+                            <div class="bar" id="html"><div></div></div>
+                            <div class="bar" id="js"><div></div></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="subSection" id="skills">
+                    <h2>Skills</h2>
+                    <article>
+                    <h3>skill1</h3>
+                    <p>uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt i</p>
+                    <h3>skill2</h3>
+                    <p>uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt i</p>
+                    </article>
+                </section>
+                <section class="subSection" id="qualites">
+                    <h2>Qualités</h2>
+                    <div class="bubbles">
+                        <div>Rigoureux</div>
+                        <div>Créatif</div>
+                        <div>Perfectionniste</div>
+                    </div>
+                </section>
+        </section>
+        <section id="experience" class="main">
+            <h1 class="title">Mon expérience</h1>
+            <table>
+                <tr>
+                    <td class="date">2022-Présent</td>
+                    <td class="exp">
+                        <p class="dateMedia">2021-2022</p>
+                        Etudiant en BUT Informatique - IUT de Lille
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date">2021-2022</td>
+                    <td class="exp">
+                        <p class="dateMedia">2021-2022</p>
+                        Alternant en pâtisserie - Les pétales gourmandes, Ronchin
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="projects" class="main">
+            <h1 class="title">Mes projets</h1>
+            <table>
+                <tr>
+                    <td class="date">2023</td>
+                    <td class="exp"><div class="proj">
+                        <article>
+                            <h3>Title title title</h3>
+                            <img src="" alt="imgProjet">
+                            <p>bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </article>
+                        <div class="line"></div>
+                        <article>
+                            <h3>Title title title</h3>
+                            <img src="" alt="imgProjet">
+                            <p>bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </article>
+                        <div class="line"></div>
+                        <article>
+                            <h3>Title title title</h3>
+                            <img src="" alt="imgProjet">
+                            <p>bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </article>
+                    </div></td>
+                </tr>
+            </table>
+        </section>
+        <section id="viePerso" class="main">
+            <h1 class="title">Vie personnelle</h1>
+            <article>
+                <h2>Moyens de locomotions</h2>
+                <ul>
+                    <li>Voiture</li>
+                    <li>Transports en communs</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Mes loisirs</h2>
+                <ul>
+                    <li>Jeux vidéo</li>
+                    <li>Marche à pied</li>
+                    <li>Développement</li>
+                </ul>
+            </article>
+        </section>
+        <section id="contact" class="main">
+            <h1 class="title">Me contacter</h1>
+            <form action="mailto:theo.engelaere@gmail.com" method="post" enctype="text/plain" id="contactForm">
+                <div class="formContainer">
+                    <label for="nom">Nom :</label>
+                    <input name="name" type="text" id="name" required>
+                </div>
+                <div class="formContainer">
+                    <label for="nom">E-Mail :</label>
+                    <input name="email" type="text" id="email" required>
+                </div>
+                <div class="formContainer">
+                    <label for="nom">Message :</label>
+                    <textarea id="message" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" value="Envoyer"></i>Envoyer</button>
+            </form>
+        </section>
+    </div>
+    <footer> 
+        <button id="scrollToTopBtn" onclick="scrollToTop()">
+           <img src="./img/up.png" alt="UP">
+        </button>
+    </footer>
+    <script>
+        const header = document.querySelector("header");
+        const menuIcon = document.getElementById("menuMobileIcone");
+        const menu = document.getElementById("menu");
+        let vMobileMenu = false;
+        
+        window.addEventListener("load", function() {
+            scrollToTop();
+        });
+        window.addEventListener("scroll", function() {
+            if(window.scrollY <75){
+                header.style.width = "90%";
+                header.style.height = "4.5rem";
+                header.style.top = "2rem";
+                header.style.left = "5%";
+                header.style.borderRadius = "3rem";
+            }else{
+                header.style.width = "100%"; 
+                header.style.height = "5rem";
+                header.style.top = "0";
+                header.style.left = "0";
+                header.style.borderRadius = "0";
+            }
+        });
+        function scrollToTop() {
+            document.documentElement.scrollTop = 0;
+        }
+        function displayMobileMenu(){
+            vMobileMenu = true;
+            menuIcon.style.display = "none";
+            menu.style.display = "flex";
+        }
+        function closeMobileMenu(){
+            if(!vMobileMenu) return;
+            vMobileMenu = false;
+            if(window.length > 1375) return;
+            menuIcon.style.display = "block";
+            menu.style.display = "none";
+        }
+        function scrollToContact(){
+            document.getElementById("contact").scrollIntoView({behavior: 'smooth' });
+        }
+        function openLinkedIn(){
+            window.open("https://www.linkedin.com/in/theo-engelaere", '_blank');
+        }
+        function downloadCV(){
+            /*
+            var link = document.createElement("a");
+            link.download = "CV_Theo_Engelaere.txt";
+            link.href = "";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            delete link;
+            */
+        }
+    </script>
+</body>
+</html>
