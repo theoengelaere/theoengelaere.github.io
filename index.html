@@ -175,14 +175,18 @@
             <h1 class="title">Me contacter</h1>
             <form id="contactForm" action="https://formsubmit.co/2caa30b35ab780345d1b222ea9253f1c " method="POST">
                 <div class="formContainer">
-                    <label for="nom">Nom :</label>
+                    <label for="name">Nom :</label>
                     <input name="name" type="text" id="name" required>
                 </div>
                 <div class="formContainer">
-                    <label for="message">Message :</label>
-                    <input type="text" id="message" name="message" required>
+                    <label for="email">Email :</label>
+                    <input name="email" type="email" id="name" required>
                 </div>
-                <input type="hidden" name="_next" value="https://google.com">
+                <div class="formContainer">
+                    <label for="message">Message :</label>
+                    <textarea type="text" id="message" name="message" rows="10" required>
+                </div>
+                <input type="hidden" name="_next" value="theo.engelaere.github.io/confirmation.html">
                 <button type="submit">Envoyer</button>
             </form>
         </section>
