@@ -149,7 +149,7 @@
             </article>
         </section>
 
-        <section id="contact" class="main">
+        <!-- <section id="contact" class="main">
             <h1 class="title">Me contacter</h1>
             <form action="envoyer_email.php" id="contactForm">
                 <div class="formContainer">
@@ -169,6 +169,20 @@
                     <textarea id="message" name="message" rows="10" required></textarea>
                 </div>
                 <button type="submit" value="Envoyer"></i>Envoyer</button>
+            </form>
+        </section> -->
+        <section id="contact" class="main">
+            <h1 class="title">Me contacter</h1>
+            <form action="envoyer_email.php" id="contactForm" method="post">
+                <div class="formContainer">
+                    <label for="nom">Nom :</label>
+                    <input name="nom" type="text" id="name" required>
+                </div>
+                <div class="formContainer">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="10" required></textarea>
+                </div>
+                <input type="submit" value="Envoyer">
             </form>
         </section>
     </div>
