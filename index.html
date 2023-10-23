@@ -173,16 +173,17 @@
         </section> -->
         <section id="contact" class="main">
             <h1 class="title">Me contacter</h1>
-            <form action="https://formsubmit.co/el/jitoda" id="contactForm" method="post">
+            <form id="contactForm" action="https://formsubmit.co/theo.engelaere.etu@univ-lille.fr" method="POST">
                 <div class="formContainer">
                     <label for="nom">Nom :</label>
-                    <input name="nom" type="text" id="name" required>
+                    <input name="name" type="text" id="name" required>
                 </div>
                 <div class="formContainer">
                     <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="10" required></textarea>
+                    <input type="text" id="message" name="message" required>
                 </div>
-                <input type="submit" value="Envoyer">
+                <input type="hidden" name="_next" value="https://google.com">
+                <button type="submit">Envoyer</button>
             </form>
         </section>
     </div>
