@@ -546,8 +546,11 @@ table{
   #headerName h1{
     font-size: 1em;
   }
-  .title {
+  .title{
     font-size: 1.5em;
+  }
+  h3, h2{
+    font-size: 1.2em;
   }
   p{
     font-size: 0.9em;
@@ -562,6 +565,16 @@ table{
   #languages, #skills, #qualites, #contactForm{
     width: 100%;
     padding: 1rem 0;
+  }
+  .bar{
+    width: 7rem;;
+  }
+  #viePerso article{
+    flex-direction: column;
+  }
+  #viePerso article ul{
+    padding-left: 0;
+    width: 100%;
   }
   #contactForm{
     width: 95%;

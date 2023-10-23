@@ -148,6 +148,7 @@
                 </ul>
             </article>
         </section>
+
         <section id="contact" class="main">
             <h1 class="title">Me contacter</h1>
             <form action="mailto:theo.engelaere@gmail.com" method="post" enctype="text/plain" id="contactForm">
@@ -167,11 +168,16 @@
             </form>
         </section>
     </div>
+
     <footer> 
         <button id="scrollToTopBtn" onclick="scrollToTop()">
            <img src="./img/up.png" alt="UP">
         </button>
     </footer>
+
+
+
+
     <script>
         const header = document.querySelector("header");
         const menuIcon = document.getElementById("menuMobileIcone");
@@ -218,15 +224,12 @@
             window.open("https://www.linkedin.com/in/theo-engelaere", '_blank');
         }
         function downloadCV(){
-            /*
-            var link = document.createElement("a");
-            link.download = "CV_Theo_Engelaere.txt";
-            link.href = "";
-            document.body.appendChild(link);
+            var pdfURL = './download/CV_Theo_Engelaere.pdf';
+            var link = document.createElement('a');
+            link.href = pdfURL;
+            link.download = 'CV_Theo_Engelaere.pdf';
+            link.target = '_blank';
             link.click();
-            document.body.removeChild(link);
-            delete link;
-            */
         }
     </script>
 </body>
