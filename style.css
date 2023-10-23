@@ -415,10 +415,18 @@ table{
 }
 #contactForm button{
   font-size: 1.25em;
+  padding: 0.5rem;
 }
 
 
-
+#messageEnvoye{
+  flex-direction: column;
+  margin-top: 40%;
+  animation: none;
+}
+#retourCV{
+  padding: 1rem;
+}
 
 
 
@@ -527,6 +535,10 @@ table{
   .main table td{
     text-align: center;
   }
+  .main table td .dateMedia{
+    width: 13%;
+    margin: auto auto;
+  }
   #competences section{
     flex-direction: column;
     width: 90%;
@@ -559,7 +571,7 @@ table{
     padding-left: 2rem;
   }
   .main, #presentation{
-    padding:1rem 0;;
+    padding:1rem 0;
     width: 97%;
   }
   #languages, #skills, #qualites, #contactForm{
