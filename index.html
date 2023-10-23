@@ -151,17 +151,21 @@
 
         <section id="contact" class="main">
             <h1 class="title">Me contacter</h1>
-            <form action="mailto:theo.engelaere@gmail.com" method="post" enctype="text/plain" id="contactForm">
+            <form action="envoyer_email.php" id="contactForm">
                 <div class="formContainer">
-                    <label for="nom">Nom :</label>
+                    <label for="name">Nom :</label>
                     <input name="name" type="text" id="name" required>
                 </div>
                 <div class="formContainer">
-                    <label for="nom">E-Mail :</label>
+                    <label for="email">E-Mail :</label>
                     <input name="email" type="text" id="email" required>
                 </div>
                 <div class="formContainer">
-                    <label for="nom">Message :</label>
+                    <label for="object">Objet :</label>
+                    <input name="object" type="text" id="email" required>
+                </div>
+                <div class="formContainer">
+                    <label for="message">Message :</label>
                     <textarea id="message" name="message" rows="10" required></textarea>
                 </div>
                 <button type="submit" value="Envoyer"></i>Envoyer</button>
