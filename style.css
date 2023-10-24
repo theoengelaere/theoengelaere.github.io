@@ -421,7 +421,7 @@ table{
 
 #messageEnvoye{
   flex-direction: column;
-  margin-top: 40%;
+  margin-top: 5rem;
   animation: none;
 }
 #retourCV{
@@ -566,6 +566,9 @@ table{
   }
   p{
     font-size: 0.9em;
+  }
+  .dateMedia{
+    font-size: 1em;
   }
   #headerName{
     padding-left: 2rem;
