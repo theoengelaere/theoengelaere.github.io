@@ -430,30 +430,28 @@ table{
 
 
 
-
-/*
-
-@media (min-width: 1375px){
-  #menu{
-    display: flex;
-    visibility:visible;
-  }
-  #menuMobileIcone, .dateMedia{
-    visibility: hidden;
+@media (max-width: 1435px){
+  #menuMobileIcone{
     display: none;
-    background: green;
   }
-  body{
-    background: green;
+  header{
+    justify-content: space-evenly;
+  }
+  #headerName{
+    font-size: 1.2em;
+    padding-left:1.5rem;
+    width: 30%;
+  }
+  
+  #menu{
+    width: 70%;
+    padding-right: 1.5rem;
+    font-size: 1em;
+    gap: 1rem;
   }
 }
 
-*/
-
-
-
-
-@media (max-width: 1375px){
+@media (max-width: 1100px){
   #scrollToTopBtn{
     display: none;
   }
@@ -547,6 +545,24 @@ table{
   #projects table{
     width: 100%;
   }
+  
+  #headerName{
+    padding-left: 1rem;
+    width: 70%;
+  }
+  #menuMobileIcone img{
+    width: 60%;
+    height: 60%;
+  }
+  #menuMobileIcone{
+    width: 5rem;
+    height: 4rem;
+    
+  }
+  #menu{
+    width: 35%;
+    font-size: 1.2em;
+  }
 }
 
 
@@ -556,7 +572,7 @@ table{
 
 @media (max-width: 560px){
   #headerName h1{
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .title{
     font-size: 1.5em;
@@ -570,8 +586,25 @@ table{
   .dateMedia{
     font-size: 1em;
   }
+  header{
+    justify-content: space-between;
+  }
   #headerName{
-    padding-left: 2rem;
+    padding-left: 1rem;
+    width: 70%;
+  }
+  #menuMobileIcone img{
+    width: 60%;
+    height: 60%;
+  }
+  #menuMobileIcone{
+    width: 5rem;
+    height: 4rem;
+    
+  }
+  #menu{
+    width: 50%;
+    font-size: 1.2em;
   }
   .main, #presentation{
     padding:1rem 0;
