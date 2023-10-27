@@ -48,7 +48,7 @@ footer{
   width: 65%;
   margin: auto;
   margin-bottom: 2rem;
-  padding: 4rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   box-shadow: 3px 6px 20px rgb(20,20,20);
   text-align: center;
@@ -221,7 +221,7 @@ button:hover{
 }
 #languages, #skills, #qualites, #contactForm{
   width: 75%;
-  padding: 3rem 5rem;
+  padding: 1rem 5rem;
   flex-direction: row;
   gap: 5rem;
   min-height: 12rem;
@@ -296,7 +296,7 @@ button:hover{
 
 
 
-#experience{
+#formations{
   flex-direction: column;
 }
 td{
@@ -340,9 +340,11 @@ table{
 #projects h3{
   font-size: 1.25em;
 }
-#projects article{ 
+#projects article{
   text-align: center;
   margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 #projects p{ 
   text-align: justify;
@@ -351,6 +353,20 @@ table{
   border: 1px solid rgb(60,60,60);
   width: 10rem;
   height: 10rem;
+}
+#projects .technoProjet{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1rem;
+}
+#projects .technoProjet p{
+  font-size: 1.15em;
+  font-weight: bold;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  background: rgba(100,100,100,0.5);
 }
 .line{
   background: rgb(60,60,60);
@@ -429,10 +445,17 @@ table{
 }
 
 
-
+@media (max-width: 1700px){
+  .main{
+    width: 75%;
+  }
+}
 @media (max-width: 1435px){
   #menuMobileIcone{
     display: none;
+  }
+  .main{
+    width: 85%;
   }
   header{
     justify-content: space-evenly;
@@ -471,8 +494,18 @@ table{
     text-align: center;
     font-size: 1.75rem;
     background: linear-gradient(75deg, rgba(33,57,98,1) 0%, rgba(32,39,59,1) 100%);
+    width: 35%;
+    font-size: 1.2em;
   }
 
+  table{
+    width: 100%;
+  }
+  
+  .technoProjet p{
+    padding: 0 1.25rem;
+  }
+  
   #closeMenu{
     display: block;
     height: 6rem;
@@ -523,7 +556,6 @@ table{
   .main{
     width: 75%;
   }
-  
   .date{
     display: none;
   }
@@ -533,17 +565,12 @@ table{
   .main table td{
     text-align: center;
   }
-  .main table td .dateMedia{
-    width: 13%;
-    margin: auto auto;
-  }
   #competences section{
     flex-direction: column;
-    width: 90%;
-    gap: 1rem;
+    gap: 0.5rem;
   }
-  #projects table{
-    width: 100%;
+  #projects .dateMedia{
+    text-align: center;
   }
   
   #headerName{
@@ -559,9 +586,9 @@ table{
     height: 4rem;
     
   }
-  #menu{
-    width: 35%;
-    font-size: 1.2em;
+  
+  #contactForm .formContainer input{
+    width: 90%;
   }
 }
 
