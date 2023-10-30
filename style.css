@@ -44,6 +44,17 @@ width: 100%;
 margin: 0;
 }
 .main{
+  background: linear-gradient(75deg, rgba(77,84,105,1) 0%, rgba(89,118,168,1) 100%); 
+  width: 65%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 3px 6px 20px rgb(20,20,20);
+  text-align: center;
+  justify-content: center;
+  gap:2rem;
+  animation: mymove2 2s ease-out;
 background: linear-gradient(75deg, rgba(77,84,105,1) 0%, rgba(89,118,168,1) 100%); 
 width: 65%;
 margin: auto;
