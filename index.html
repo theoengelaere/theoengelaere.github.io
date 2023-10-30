@@ -16,8 +16,8 @@
         <ul id="menu">
             <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
             <li><a href="#aProposDeMoi" onclick="closeMobileMenu()">A propos de moi</a></li>
+            <li><a href="#formations" onclick="closeMobileMenu()">Formations</a></li>
             <li><a href="#competences" onclick="closeMobileMenu()">Compétences</a></li>
-            <li><a href="#experience" onclick="closeMobileMenu()">Experience</a></li>
             <li><a href="#projects" onclick="closeMobileMenu()">Projets</a></li>
             <li><a href="#viePerso" onclick="closeMobileMenu()">Vie Perso</a></li>
             <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
@@ -45,13 +45,35 @@
             <article>
                 <h1 class="title">A propos de moi</h1>
                 <p>&emsp;Actuellement étudiant en deuxième année de BUT Informatique 
-                    à l’IUT de Lille, je suis à la recherche d'un stage pour la fin de cette 
-                    année scolaire. Ma passion pour le développement d'applications me 
-                    pousse à envisager une carrière dans ce domaine après l'obtention du 
-                    diplôme. Grâce aux nombreux projets que j'ai pu réaliser seul ou en 
-                    équipe à l'IUT, j'ai déjà pu me familiariser avec les méthodes agiles ainsi 
-                    qu'avec la prise en compte des demandes des clients.</p>
+                    à l’IUT de Lille, je suis à la recherche d'un stage pour avril 2024. Grâce aux nombreux projets que j'ai pu réaliser seul ou en équipe à l'IUT, j'ai déjà pu me familiariser avec les méthodes agiles et la prise en compte des demandes des clients.
+                </p>
             </article>
+        </section>
+        <section id="formations" class="main">
+            <h1 class="title">Mes Diplômes et formations</h1>
+            <table>
+                <tr>
+                    <td class="date">2022-Présent</td>
+                    <td class="exp">
+                        <p class="dateMedia">2022-Présent</p>
+                        BUT Informatique (2e année) - IUT de Lille
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date">2021-2022</td>
+                    <td class="exp">
+                        <p class="dateMedia">2021-2022</p>
+                        CAP Pâtiserie en alternance - Les Compagnons du Devoir / Les Pétales Gourmandes, Ronchin
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date">2020</td>
+                    <td class="exp">
+                        <p class="dateMedia">2020</p>
+                        BAC S (Mention Bien) - Lycée Queneau, Villeneuve-d'Ascq
+                    </td>
+                </tr>
+            </table>
         </section>
         <section id="competences" class="main">
                 <h1 class="title">Mes compétences</h1>
@@ -76,7 +98,7 @@
                     <h2>Méthodes</h2>
                     <article>
                     <h3>Git</h3>
-                    <p>&emsp;J'utilise git, avec Gitlab et Github, depuis maintenant 1 an et l'utilise au quotidien pour les projets à l'IUT ou mes projets personnels. J'ai pu experimenter la gestion des branches dans les projets en équipe ainsi que la gestion des conflits.</p>
+                    <p>&emsp;J'utilise git au quotidien pour les projets à l'IUT ou mes projets personnels. J'ai pu experimenter la gestion des branches dans les projets en équipe ainsi que la gestion des conflits.</p>
                     <h3>Agilité</h3>
                     <p>&emsp;J'ai pu réaliser un projet Java en équipe appliquant concrètement certaines méthodes agiles, notamment les Sprints avec Kanban.</p>
                     </article>
@@ -86,28 +108,9 @@
                     <div class="bubbles">
                         <div>Rigoureux</div>
                         <div>Créatif</div>
-                        <div>Perfectionniste</div>
+                        <div>Persévérant</div>
                     </div>
                 </section>
-        </section>
-        <section id="experience" class="main">
-            <h1 class="title">Mon expérience</h1>
-            <table>
-                <tr>
-                    <td class="date">2022-Présent</td>
-                    <td class="exp">
-                        <p class="dateMedia">2021-2022</p>
-                        Etudiant en BUT Informatique - IUT de Lille
-                    </td>
-                </tr>
-                <tr>
-                    <td class="date">2021-2022</td>
-                    <td class="exp">
-                        <p class="dateMedia">2021-2022</p>
-                        Alternant en pâtisserie - Les pétales gourmandes, Ronchin
-                    </td>
-                </tr>
-            </table>
         </section>
         <section id="projects" class="main">
             <h1 class="title">Mes projets</h1>
@@ -118,17 +121,20 @@
                         <p class="dateMedia">2023</p>
                         <article>
                             <h3>Gestionnaire de voyage scolaire</h3>
+                            <div class="technoProjet"><p>Java</p><p>Java FX</p><p>Graphes</p></div>
                             <p>&emsp;Réalisation complète d’une application en Java/Java fx appayant des élèves avec des hôtes de façon optimisé pour un voyage. Le projet implémente notamment une importation et exportation de données, un algorithme d’appariement à l’aide de graphes.</p>
                         </article>
                         <div class="line"></div>
                         <article>
                             <h3>BBD Jeux Olympiques</h3>
+                            <div class="technoProjet"><p>SQL</p><p>Postgres</p></div>
                             <p>&emsp;Etablissement et exploitation 
                                 d’une base de données avec une normalisation de données conséquantes sur Postgres, ainsi qu'une réalisation de divers scripts SQL proposant des requêtes avancées.</p>
                         </article>
                         <div class="line"></div>
                         <article>
                             <h3>Escape Game</h3>
+                            <div class="technoProjet"><p>HTML</p><p>CSS</p><p>Javascript</p></div>
                             <p>&emsp;Réalisation en équipe d’un jeu en 
                                 HTML/CSS/Javascript sur le thème de l'informatique. Le projet fini propose des énigmes à résoudre via des input clavier.</p>
                         </article>
@@ -168,7 +174,7 @@
                 </div>
                 <div class="formContainer">
                     <label for="message">Message :</label>
-                    <textarea type="text" id="message" name="message" rows="10" required></textarea>
+                    <textarea type="text" id="message" name="message" rows="8" required></textarea>
                 </div>
                 <input type="hidden" name="_next" value="https://theoengelaere.github.io/confirmation.html">
                 <button type="submit">Envoyer</button>
@@ -190,12 +196,33 @@
         const menuIcon = document.getElementById("menuMobileIcone");
         const menu = document.getElementById("menu");
         let vMobileMenu = false;
+
+        const navLinks = document.querySelectorAll("header ul li a");
+        const sections = document.querySelectorAll(".main");
+
         
         window.addEventListener("load", function() {
             scrollToTop();
         });
+
+        document.addEventListener("mousemove", function(event) {
+            navLinks.forEach(function(lien) {
+                if(lien.style.textDecoration == "underline") return;
+                if(lien.matches(':hover')){
+                    lien.style.color = "indianred";
+                    lien.style.textDecoration = "none";
+                    return;
+                }
+                    lien.style.color = "white";
+                    lien.style.textDecoration = "none";
+    
+            });
+        });
+
         window.addEventListener("scroll", function() {
-            if(window.scrollY <75){
+            var scrollPosition = window.scrollY;
+
+            if(scrollPosition <75){
                 header.style.width = "90%";
                 header.style.height = "4.5rem";
                 header.style.top = "2rem";
@@ -208,6 +235,27 @@
                 header.style.left = "0";
                 header.style.borderRadius = "0";
             }
+
+            let idx = -1;
+            var sectionTop;
+            var sectionHeight;
+
+            sections.forEach( section =>{
+                if(idx == -1){idx++; return;}
+                if(!navLinks[idx]) return;
+                
+                if(navLinks[idx].matches(':hover'))return;
+                sectionTop = section.offsetTop - 100;
+                sectionHeight = section.clientHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks[idx].style.color = "indianred";
+                    navLinks[idx].style.textDecoration = "underline";
+                }else{
+                    navLinks[idx].style.color = "white";
+                    navLinks[idx].style.textDecoration = "none";
+                }
+                idx++;
+            });
         });
         function scrollToTop() {
             document.documentElement.scrollTop = 0;
