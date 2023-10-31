@@ -303,7 +303,9 @@ width: 30%;
 
 
 
-
+#projects table td,#formations table td{
+  padding: 0;
+}
 #formations{
 flex-direction: column;
 }
@@ -507,7 +509,7 @@ header{
 }
 
 table{
-  width: 100%;
+  width: 95%;
 }
 
 .technoProjet p{
@@ -670,4 +672,7 @@ header{
   width: 10rem;
   margin-top: 2rem;
 }
+  #projects .technoProjet{
+    font-size: 0.75em;
+  }
 }
