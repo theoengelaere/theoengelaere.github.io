@@ -132,10 +132,12 @@ gap: 1.5rem;
 
 
 
+#mainContainer{
+  margin-top: 11rem;
 
+}
 #presentation{
 padding: 8rem 4rem;
-margin-top: 11rem;
 animation: mymove 1.5s ease-out;
 }
 .subSection{
@@ -222,16 +224,8 @@ font-size: 2em;
 
 
 
-
-
-
-
-
-#competences{
-flex-direction: column;
-}
-#languages, #skills, #qualites, #contactForm{
-width: 75%;
+.lightblueSection{
+  width: 75%;
 padding: 1rem 5rem;
 flex-direction: row;
 gap: 5rem;
@@ -240,6 +234,12 @@ border: 1px solid rgb(60,60,60);
 border-radius: 4rem;
 background: rgba(128,162,167,0.5);
 box-shadow: 4px 2px 12px rgb(67,72,80);
+}
+
+
+
+#competences{
+flex-direction: column;
 }
 .bubbles{
 display: flex;

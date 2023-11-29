@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>CV - Théo Engelaere</title>
 </head>
+
 <body>
     <header>
         <section id="headerName">
@@ -24,7 +26,6 @@
         </ul>
     </header>
 
-    
     <div id="mainContainer">
         <section id="presentation" class="main">
             <img src="img/photo.jpg" alt="photo" id="photo">
@@ -34,8 +35,10 @@
                     <p>Je projette de commencer ma carrière dans le développement d'applications</p>
                 </article>
                 <div id="buttons">
-                    <button class="principal" onclick="scrollToMainSection('contact')">Contactez-moi <img src="./img/email.png" alt=""></button>
-                    <button class="principal" onclick="downloadCV()">Téléchargez mon CV <img src="./img/telecharger.png" alt=""></button>
+                    <button class="principal" onclick="scrollToMainSection('contact')">Contactez-moi <img
+                            src="./img/email.png" alt=""></button>
+                    <button class="principal" onclick="downloadCV()">Téléchargez mon CV <img src="./img/telecharger.png"
+                            alt=""></button>
                     <button class="reseaux" onclick="openLinkedIn()"><img src="./img/linkedin.png" alt="Lkin"></button>
 
                 </div>
@@ -44,8 +47,11 @@
         <section id="aProposDeMoi" class="main">
             <article>
                 <h1 class="title">A propos de moi</h1>
-                <p>&emsp;Actuellement étudiant en deuxième année de BUT Informatique 
-                    à l'IUT de Lille, je suis à la recherche d'un stage pour avril 2024. Grâce aux nombreux projets que j'ai pu réaliser seul ou en équipe, j'ai déjà pu me familiariser avec les méthodes agiles et la prise en compte des demandes des clients.
+                <p>&emsp;Actuellement étudiant en deuxième année de BUT Informatique
+                    à l'IUT de Lille, je suis à la recherche d'un stage pour avril 2024. Grâce aux nombreux projets que
+                    j'ai
+                    pu réaliser seul ou en équipe, j'ai déjà pu me familiariser avec les méthodes agiles et la prise en
+                    compte des demandes des clients.
                 </p>
             </article>
         </section>
@@ -76,69 +82,104 @@
             </table>
         </section>
         <section id="competences" class="main">
-                <h1 class="title">Mes compétences</h1>
-                <section class="subSection" id="languages">
-                    <h2>Languages Info</h2>
-                    <div id="enumLanguages">
-                        <div class="bubbles">
-                            <div class="java">Java</div>
-                            <div class="sql">SQL</div>
-                            <div class="html">HTML/CSS</div>
-                            <div class="js">Javascript</div>
-                        </div>
-                        <div id="bars">
-                            <div class="bar" id="java"><div></div></div>
-                            <div class="bar" id="sql"><div></div></div>
-                            <div class="bar" id="html"><div></div></div>
-                            <div class="bar" id="js"><div></div></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="subSection" id="skills">
-                    <h2>Méthodes</h2>
-                    <article>
-                    <h3>Git</h3>
-                    <p>&emsp;J'utilise git au quotidien pour les projets à l'IUT ou mes projets personnels. J'ai pu experimenter la gestion des branches dans les projets en équipe ainsi que la gestion des conflits.</p>
-                    <h3>Agilité</h3>
-                    <p>&emsp;J'ai pu réaliser un projet Java en équipe appliquant concrètement certaines méthodes agiles, notamment les Sprints avec Kanban.</p>
-                    </article>
-                </section>
-                <section class="subSection" id="qualites">
-                    <h2>Qualités</h2>
+            <h1 class="title">Mes compétences</h1>
+            <section class="subSection lightblueSection" id="languages">
+                <h2>Languages Info</h2>
+                <div id="enumLanguages">
                     <div class="bubbles">
-                        <div>Rigoureux</div>
-                        <div>Créatif</div>
-                        <div>Persévérant</div>
+                        <div class="java">Java</div>
+                        <div class="sql">SQL</div>
+                        <div class="html">HTML/CSS</div>
+                        <div class="js">Javascript</div>
                     </div>
-                </section>
+                    <div id="bars">
+                        <div class="bar" id="java">
+                            <div></div>
+                        </div>
+                        <div class="bar" id="sql">
+                            <div></div>
+                        </div>
+                        <div class="bar" id="html">
+                            <div></div>
+                        </div>
+                        <div class="bar" id="js">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subSection lightblueSection" id="skills">
+                <h2>Méthodes</h2>
+                <article>
+                    <h3>Git</h3>
+                    <p>&emsp;J'utilise git au quotidien pour les projets à l'IUT ou mes projets personnels. J'ai pu
+                        experimenter la gestion des branches dans les projets en équipe ainsi que la gestion des
+                        conflits.
+                    </p>
+                    <h3>Agilité</h3>
+                    <p>&emsp;J'ai pu réaliser un projet Java en équipe appliquant concrètement certaines méthodes
+                        agiles,
+                        notamment les Sprints avec Kanban.</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection" id="qualites">
+                <h2>Qualités</h2>
+                <div class="bubbles">
+                    <div>Rigoureux</div>
+                    <div>Créatif</div>
+                    <div>Persévérant</div>
+                </div>
+            </section>
         </section>
         <section id="projects" class="main">
             <h1 class="title">Mes projets</h1>
             <table>
                 <tr>
                     <td class="date">2023</td>
-                    <td class="exp"><div class="proj">
-                        <p class="dateMedia">2023</p>
-                        <article>
-                            <h3>Gestionnaire de voyage scolaire</h3>
-                            <div class="technoProjet"><p>Java</p><p>Java FX</p><p>Graphes</p></div>
-                            <p>&emsp;Réalisation complète d’une application en Java/Java fx appayant des élèves avec des hôtes de façon optimisé pour un voyage. Le projet implémente notamment une importation et exportation de données, un algorithme d’appariement à l’aide de graphes.</p>
-                        </article>
-                        <div class="line"></div>
-                        <article>
-                            <h3>BBD Jeux Olympiques</h3>
-                            <div class="technoProjet"><p>SQL</p><p>Postgres</p></div>
-                            <p>&emsp;Etablissement et exploitation 
-                                d’une base de données avec une normalisation de données conséquantes sur Postgres, ainsi qu'une réalisation de divers scripts SQL proposant des requêtes avancées.</p>
-                        </article>
-                        <div class="line"></div>
-                        <article>
-                            <h3>Escape Game</h3>
-                            <div class="technoProjet"><p>HTML</p><p>CSS</p><p>Javascript</p></div>
-                            <p>&emsp;Réalisation en équipe d’un jeu en 
-                                HTML/CSS/Javascript sur le thème de l'informatique. Le projet fini propose des énigmes à résoudre via des input clavier.</p>
-                        </article>
-                    </div></td>
+                    <td class="exp">
+                        <div class="proj">
+                            <p class="dateMedia">2023</p>
+                            <article>
+                                <h3>Gestionnaire de voyage scolaire</h3>
+                                <div class="technoProjet">
+                                    <p>Java</p>
+                                    <p>Java FX</p>
+                                    <p>Graphes</p>
+                                </div>
+                                <p>&emsp;Réalisation complète d’une application en Java/Java fx appayant des élèves avec
+                                    des
+                                    hôtes de façon optimisé pour un voyage. Le projet implémente notamment une
+                                    importation
+                                    et exportation de données, un algorithme d’appariement à l’aide de graphes.</p>
+                            </article>
+                            <a href="./projets.html#voyagesScolaire">gestionnaire</a>
+                            <div class="line"></div>
+                            <article>
+                                <h3>BBD Jeux Olympiques</h3>
+                                <div class="technoProjet">
+                                    <p>SQL</p>
+                                    <p>Postgres</p>
+                                </div>
+                                <p>&emsp;Etablissement et exploitation
+                                    d’une base de données avec une normalisation de données conséquantes sur Postgres,
+                                    ainsi
+                                    qu'une réalisation de divers scripts SQL proposant des requêtes avancées.</p>
+                            </article>
+                            <div class="line"></div>
+                            <article>
+                                <h3>Escape Game</h3>
+                                <div class="technoProjet">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>Javascript</p>
+                                </div>
+                                <p>&emsp;Réalisation en équipe d’un jeu en
+                                    HTML/CSS/Javascript sur le thème de l'informatique. Le projet fini propose des
+                                    énigmes à
+                                    résoudre via des input clavier.</p>
+                            </article>
+                        </div>
+                    </td>
                 </tr>
             </table>
         </section>
@@ -163,7 +204,8 @@
 
         <section id="contact" class="main">
             <h1 class="title">Me contacter</h1>
-            <form id="contactForm" action="https://formsubmit.co/2caa30b35ab780345d1b222ea9253f1c " method="POST">
+            <form id="contactForm" class="lightblueSection"
+                action="https://formsubmit.co/2caa30b35ab780345d1b222ea9253f1c " method="POST">
                 <div class="formContainer">
                     <label for="name">Nom :</label>
                     <input name="name" type="text" id="name" required>
@@ -182,122 +224,17 @@
         </section>
     </div>
 
-    <footer> 
+    <footer>
         <button id="scrollToTopBtn" onclick="scrollToTop()">
-           <img src="./img/up.png" alt="UP">
+            <img src="./img/up.png" alt="UP">
         </button>
     </footer>
 
 
 
 
-    <script>
-        const header = document.querySelector("header");
-        const menuIcon = document.getElementById("menuMobileIcone");
-        const menu = document.getElementById("menu");
-        let vMobileMenu = false;
 
-        const navLinks = document.querySelectorAll("header ul li a");
-        const sections = document.querySelectorAll(".main");
-        
-        window.addEventListener("load", function() {
-            scrollToTop();
-        });
-
-        document.addEventListener("mousemove", function(event) {
-            navLinks.forEach(function(lien) {
-                if(lien.style.textDecoration == "underline") return;
-                if(lien.matches(':hover')){
-                    lien.style.color = "indianred";
-                    lien.style.textDecoration = "none";
-                    return;
-                }
-                    lien.style.color = "white";
-                    lien.style.textDecoration = "none";
-    
-            });
-            linkStyleUpdate();
-        });
-
-        navLinks.forEach(link =>{
-            link.addEventListener("click", function(event){
-                if(vMobileMenu) closeMobileMenu();
-            })
-        });
-
-        function linkStyleUpdate(){
-            var scrollPosition = window.scrollY;
-
-            if(scrollPosition <75){
-                header.style.width = "90%";
-                header.style.height = "4.5rem";
-                header.style.top = "2rem";
-                header.style.left = "5%";
-                header.style.borderRadius = "3rem";
-            }else{
-                header.style.width = "100%"; 
-                header.style.height = "5rem";
-                header.style.top = "0";
-                header.style.left = "0";
-                header.style.borderRadius = "0";
-            }
-
-            let idx = -1;
-            var sectionTop;
-            var sectionHeight;
-
-            sections.forEach( section =>{
-                if(idx == -1){idx++; return;}
-                if(!navLinks[idx]) return;
-                
-                if(navLinks[idx].matches(':hover'))return;
-                sectionTop = section.offsetTop - 100;
-                sectionHeight = section.clientHeight;
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    navLinks[idx].style.color = "indianred";
-                    navLinks[idx].style.textDecoration = "underline";
-                }else{
-                    navLinks[idx].style.color = "white";
-                    navLinks[idx].style.textDecoration = "none";
-                }
-                idx++;
-            });
-        }
-
-        window.addEventListener("scroll", function() {
-            linkStyleUpdate();
-        });
-        function scrollToTop() {
-            document.documentElement.scrollTop = 0;
-        }
-        function displayMobileMenu(){
-            vMobileMenu = true;
-            menuIcon.style.display = "none";
-            menu.style.display = "flex";
-        }
-        function closeMobileMenu(){
-            vMobileMenu = false;
-            if(window.length > 1100) return;
-            menuIcon.style.display = "block";
-            menu.style.display = "none";
-        }
-        function scrollToMainSection(sectionID){
-            console.log(sectionID);
-            const section = document.getElementById(sectionID);
-            console.log(section.innerHTML);
-            if(section) section.scrollIntoView({behavior: 'smooth' });
-        }
-        function openLinkedIn(){
-            window.open("https://www.linkedin.com/in/theo-engelaere", '_blank');
-        }
-        function downloadCV(){
-            var pdfURL = './download/CV_Theo_Engelaere_2023.pdf';
-            var link = document.createElement('a');
-            link.href = pdfURL;
-            link.download = 'CV_Theo_Engelaere_2023.pdf';
-            link.target = '_blank';
-            link.click();
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
