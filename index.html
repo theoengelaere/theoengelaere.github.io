@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>CV - Théo Engelaere</title>
 </head>
@@ -14,213 +16,17 @@
         <section id="headerName">
             <h1>Théo Engelaere</h1>
         </section>
-        <button id="menuMobileIcone" onclick="displayMobileMenu()"><img src="./img/menu.png" alt="MENU"></button>
-        <ul id="menu">
-            <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
-            <li><a onclick="scrollToMainSection('aProposDeMoi')">A propos de moi</a></li>
-            <li><a onclick="scrollToMainSection('formations')">Formations</a></li>
-            <li><a onclick="scrollToMainSection('competences')">Compétences</a></li>
-            <li><a onclick="scrollToMainSection('projects')">Projets</a></li>
-            <li><a onclick="scrollToMainSection('viePerso')">Vie Perso</a></li>
-            <li><a onclick="scrollToMainSection('contact')">Contact</a></li>
-        </ul>
     </header>
 
     <div id="mainContainer">
         <section id="presentation" class="main">
-            <img src="img/photo.jpg" alt="photo" id="photo">
-            <section class="subSection">
-                <article>
-                    <h2>Je suis Théo Engelaere, étudiant en BUT Informatique.</h2>
-                    <p>Je projette de commencer ma carrière dans le développement d'applications</p>
-                </article>
-                <div id="buttons">
-                    <button class="principal" onclick="scrollToMainSection('contact')">Contactez-moi <img
-                            src="./img/email.png" alt=""></button>
-                    <button class="principal" onclick="downloadCV()">Téléchargez mon CV <img src="./img/telecharger.png"
-                            alt=""></button>
-                    <button class="reseaux" onclick="openLinkedIn()"><img src="./img/linkedin.png" alt="Lkin"></button>
-
-                </div>
-            </section>
-        </section>
-        <section id="aProposDeMoi" class="main">
             <article>
-                <h1 class="title">A propos de moi</h1>
-                <p>&emsp;Actuellement étudiant en deuxième année de BUT Informatique
-                    à l'IUT de Lille, je suis à la recherche d'un stage pour avril 2024. Grâce aux nombreux projets que
-                    j'ai
-                    pu réaliser seul ou en équipe, j'ai déjà pu me familiariser avec les méthodes agiles et la prise en
-                    compte des demandes des clients.
-                </p>
+                <h3>
+                    Mise à jour en cours, veuillez revenir plus tard.
+                </h3>
             </article>
         </section>
-        <section id="formations" class="main">
-            <h1 class="title">Mes Diplômes et formations</h1>
-            <table>
-                <tr>
-                    <td class="date">2022-Présent</td>
-                    <td class="exp">
-                        <p class="dateMedia">2022-Présent</p>
-                        BUT Informatique (2e année) - IUT de Lille
-                    </td>
-                </tr>
-                <tr>
-                    <td class="date">2021-2022</td>
-                    <td class="exp">
-                        <p class="dateMedia">2021-2022</p>
-                        CAP Pâtiserie en alternance - Les Compagnons du Devoir / Les Pétales Gourmandes, Ronchin
-                    </td>
-                </tr>
-                <tr>
-                    <td class="date">2020</td>
-                    <td class="exp">
-                        <p class="dateMedia">2020</p>
-                        BAC S (Mention Bien) - Lycée Queneau, Villeneuve-d'Ascq
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section id="competences" class="main">
-            <h1 class="title">Mes compétences</h1>
-            <section class="subSection lightblueSection" id="languages">
-                <h2>Languages Info</h2>
-                <div id="enumLanguages">
-                    <div class="bubbles">
-                        <div class="java">Java</div>
-                        <div class="sql">SQL</div>
-                        <div class="html">HTML/CSS</div>
-                        <div class="js">Javascript</div>
-                    </div>
-                    <div id="bars">
-                        <div class="bar" id="java">
-                            <div></div>
-                        </div>
-                        <div class="bar" id="sql">
-                            <div></div>
-                        </div>
-                        <div class="bar" id="html">
-                            <div></div>
-                        </div>
-                        <div class="bar" id="js">
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="subSection lightblueSection" id="skills">
-                <h2>Méthodes</h2>
-                <article>
-                    <h3>Git</h3>
-                    <p>&emsp;J'utilise git au quotidien pour les projets à l'IUT ou mes projets personnels. J'ai pu
-                        experimenter la gestion des branches dans les projets en équipe ainsi que la gestion des
-                        conflits.
-                    </p>
-                    <h3>Agilité</h3>
-                    <p>&emsp;J'ai pu réaliser un projet Java en équipe appliquant concrètement certaines méthodes
-                        agiles,
-                        notamment les Sprints avec Kanban.</p>
-                </article>
-            </section>
-            <section class="subSection lightblueSection" id="qualites">
-                <h2>Qualités</h2>
-                <div class="bubbles">
-                    <div>Rigoureux</div>
-                    <div>Créatif</div>
-                    <div>Persévérant</div>
-                </div>
-            </section>
-        </section>
-        <section id="projects" class="main">
-            <h1 class="title">Mes projets</h1>
-            <table>
-                <tr>
-                    <td class="date">2023</td>
-                    <td class="exp">
-                        <div class="proj">
-                            <p class="dateMedia">2023</p>
-                            <article>
-                                <h3>Gestionnaire de voyage scolaire</h3>
-                                <div class="technoProjet">
-                                    <p>Java</p>
-                                    <p>Java FX</p>
-                                    <p>Graphes</p>
-                                </div>
-                                <p>&emsp;Réalisation complète d’une application en Java/Java fx appayant des élèves avec
-                                    des
-                                    hôtes de façon optimisé pour un voyage. Le projet implémente notamment une
-                                    importation
-                                    et exportation de données, un algorithme d’appariement à l’aide de graphes.</p>
-                            </article>
-                            <div class="line"></div>
-                            <article>
-                                <h3>BBD Jeux Olympiques</h3>
-                                <div class="technoProjet">
-                                    <p>SQL</p>
-                                    <p>Postgres</p>
-                                </div>
-                                <p>&emsp;Etablissement et exploitation
-                                    d’une base de données avec une normalisation de données conséquantes sur Postgres,
-                                    ainsi
-                                    qu'une réalisation de divers scripts SQL proposant des requêtes avancées.</p>
-                            </article>
-                            <div class="line"></div>
-                            <article>
-                                <h3>Escape Game</h3>
-                                <div class="technoProjet">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>Javascript</p>
-                                </div>
-                                <p>&emsp;Réalisation en équipe d’un jeu en
-                                    HTML/CSS/Javascript sur le thème de l'informatique. Le projet fini propose des
-                                    énigmes à
-                                    résoudre via des input clavier.</p>
-                            </article>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section id="viePerso" class="main">
-            <h1 class="title">Vie personnelle</h1>
-            <article>
-                <h2>Moyens de locomotions</h2>
-                <ul>
-                    <li>Voiture</li>
-                    <li>Transports en communs</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Mes loisirs</h2>
-                <ul>
-                    <li>Jeux vidéo</li>
-                    <li>Marche à pied</li>
-                    <li>Développement</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="contact" class="main">
-            <h1 class="title">Me contacter</h1>
-            <form id="contactForm" class="lightblueSection"
-                action="https://formsubmit.co/2caa30b35ab780345d1b222ea9253f1c " method="POST">
-                <div class="formContainer">
-                    <label for="name">Nom :</label>
-                    <input name="name" type="text" id="name" required>
-                </div>
-                <div class="formContainer">
-                    <label for="email">Email :</label>
-                    <input name="email" type="email" id="email" required>
-                </div>
-                <div class="formContainer">
-                    <label for="message">Message :</label>
-                    <textarea type="text" id="message" name="message" rows="8" required></textarea>
-                </div>
-                <input type="hidden" name="_next" value="https://theoengelaere.github.io/confirmation.html">
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+        
     </div>
 
     <footer>

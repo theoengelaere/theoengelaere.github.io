@@ -91,10 +91,21 @@ function closeMobileMenu() {
     menu.style.display = "none";
 }
 function scrollToMainSection(sectionID) {
-    console.log(sectionID);
     const section = document.getElementById(sectionID);
-    console.log(section.innerHTML);
     if (section) section.scrollIntoView({ behavior: 'smooth' });
+}
+function redirect(page, section) {
+
+    console.log(page, section);
+    var link = document.createElement('a');
+    link.href = "./" + page;
+    link.click();
+    setTimeout(function () {
+        window.location.href = '#' + section;
+
+        console.log(page, section);
+    }, 1000);
+
 }
 function openLinkedIn() {
     window.open("https://www.linkedin.com/in/theo-engelaere", '_blank');

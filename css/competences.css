@@ -1,0 +1,178 @@
+.main {
+  flex-direction: column;
+}
+
+.subSection {
+  gap: 0;
+}
+
+
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 12rem;
+}
+
+.bubbles div:hover,
+.bar div:hover {
+  background: white;
+  color: black;
+  cursor: context-menu;
+  transition: all 150ms ease;
+}
+
+.bubbles div {
+  text-align: center;
+  font-weight: bold;
+  background: gainsboro;
+  padding: 0 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  box-shadow: 2px 1px 10px rgb(60, 60, 60);
+  color: rgb(40, 40, 40);
+}
+
+#enumLanguages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.bar {
+  background: rgb(60, 60, 60);
+  width: 15rem;
+  border: 1px solid rgb(80, 80, 80);
+  box-shadow: 2px 1px 10px rgb(60, 60, 60);
+}
+
+.bar {
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.bar div {
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(240, 240, 240);
+}
+
+#java div {
+  width: 85%;
+}
+
+#sql div {
+  width: 75%;
+}
+
+#html div {
+  width: 65%;
+}
+
+#js div {
+  width: 40%;
+}
+
+/* 
+#enumLanguages{
+  display: block;
+}
+.language{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bar {
+  background: rgb(60, 60, 60);
+  width: 15rem;
+  border: 1px solid rgb(80, 80, 80);
+  box-shadow: 2px 1px 10px rgb(60, 60, 60);
+}
+
+.bar{
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.bar div {
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(240, 240, 240);
+}
+
+#java .bar div {
+  width: 85%;
+}
+
+#sql .bar div {
+  width: 75%;
+}
+
+#css .bar div {
+  width: 65%;
+}
+
+#js .bar  div {
+  width: 40%;
+} 
+#java{
+  background: blue;
+  padding-left: 0;
+} */
+
+.oui{
+  height: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.oui div {
+  
+  transform-origin: center;
+  position: absolute;
+  margin: auto auto;
+  align-self: center;
+  margin: 0 0;
+  width: 6rem;
+  text-align: center;
+  font-weight: bold;
+  background: gainsboro;
+  padding: 0 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  box-shadow: 2px 1px 10px rgb(60, 60, 60);
+  color: rgb(40, 40, 40);
+}
+
+.oui > div:nth-child(1) { 
+  transform: rotate(-25deg) 
+    translate(130px) 
+    rotate(25deg); 
+}
+.oui > div:nth-child(2) { 
+  transform: rotate(0) translate(150px) rotate(-0); 
+}
+.oui > div:nth-child(3) { 
+  transform: rotate(40deg) translate(100px) rotate(-40deg); 
+}
+.oui > div:nth-child(4) { 
+   
+  transform: rotate(25deg) 
+    translate(-130px) 
+    rotate(-25deg); 
+}
+.oui > div:nth-child(5) { 
+  transform: translate(-150px);
+}
+.oui > div:nth-child(6) { 
+  transform: rotate(-40deg) translate(-100px) rotate(40deg); 
+}
