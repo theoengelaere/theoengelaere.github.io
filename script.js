@@ -15,7 +15,7 @@ document.addEventListener("mousemove", function (event) {
     navLinks.forEach(function (lien) {
         if (lien.style.textDecoration == "underline") return;
         if (lien.matches(':hover')) {
-            lien.style.color = "indianred";
+            lien.style.color = "rgba(240,110,110,1)";
             lien.style.textDecoration = "none";
             return;
         }
@@ -63,7 +63,7 @@ function linkStyleUpdate() {
         sectionTop = section.offsetTop - 100;
         sectionHeight = section.clientHeight;
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            navLinks[idx].style.color = "indianred";
+            navLinks[idx].style.color = "rgba(240,110,110,1)";
             navLinks[idx].style.textDecoration = "underline";
         } else {
             navLinks[idx].style.color = "white";

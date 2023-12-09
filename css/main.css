@@ -23,7 +23,7 @@ a {
 
 a:hover {
   transition: all 300ms ease;
-  color: indianred;
+  color: rgba(240,110,110,1);
   cursor: pointer;
 }
 
@@ -63,6 +63,7 @@ footer {
   gap: 2rem;
   animation: mymove2 2s ease-out;
 }
+
 
 #scrollToTopBtn {
   background: lightgray;
@@ -136,7 +137,7 @@ header {
   align-items: center;
   padding-right: 5rem;
   font-size: 1.3em;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 #mainContainer {
@@ -185,6 +186,11 @@ button:hover {
   box-shadow: 4px 2px 12px rgb(67, 72, 80);
 }
 
+
+.lightblueSection:hover{
+  
+  box-shadow: 2px 2px 4px black;
+}
 /*titre section*/
 .title {
   font-size: 2em;
@@ -229,10 +235,13 @@ td {
 
 
 #goBack {
-  width: 5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 3rem;
+  margin-right: 2rem;
+  
 }
 
 button img {
   width: 100%;
+  height: 100%;
 }

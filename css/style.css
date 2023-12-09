@@ -75,92 +75,19 @@
 
 
 
-#competences {
+
+
+#formations .subSection{
+  gap: 0;
   flex-direction: column;
-}
-
-.bubbles {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: 12rem;
-}
-
-.bubbles div:hover,
-.bar div:hover {
-  background: white;
-  color: black;
-  cursor: context-menu;
-  transition: all 150ms ease;
-}
-
-.bubbles div {
-  font-weight: bold;
-  background: gainsboro;
-  padding: 0 0.5rem;
-  border-radius: 2rem;
-  border: 1px solid grey;
-  box-shadow: 2px 1px 10px rgb(60, 60, 60);
-  color: rgb(40, 40, 40);
-}
-
-#enumLanguages {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-#bars {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 0.5rem;
-}
-
-.bar {
-  background: rgb(60, 60, 60);
-  width: 15rem;
-  border: 1px solid rgb(80, 80, 80);
-  box-shadow: 2px 1px 10px rgb(60, 60, 60);
-}
-
-.bar,
-.bar div {
-  height: 1rem;
-  border-radius: 1rem;
-}
-
-.bar div {
-  background-color: rgb(240, 240, 240);
-}
-
-#java div {
-  width: 80%;
-}
-
-#sql div {
-  width: 65%;
-}
-
-#html div {
-  width: 50%;
-}
-
-#js div {
-  width: 30%;
-}
-
-
-
-
-
-#formations table td {
-  padding: 0;
 }
 
 #formations {
   flex-direction: column;
 }
+
+
+
 
 
 .exp {
@@ -169,57 +96,35 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-/*
-#projects table{
- margin: 0 5rem;
-}
-#projects h3{
-font-size: 1.25em;
-}
-#projects article{
-text-align: center;
-margin-bottom: 2rem;
-justify-content: center;
-align-items: center;
-}
-#projects p{ 
-text-align: justify;
-}
-#projects img{
-border: 1px solid rgb(60,60,60);
-width: 10rem;
-height: 10rem;
-}/*
-.technoProjet{
-display: flex;
-margin: 0 auto;
-justify-content: center;
-gap: 1rem;
-}
-.technoProjet p{
-font-size: 1.15em;
-font-weight: bold;
-color: white;
-border: 1px solid grey;
-border-radius: 1rem;
-background: rgba(100,100,100,0.5);
-}
-*/
 .line {
   background: rgb(60, 60, 60);
   height: 1px;
   width: 50%;
   margin: 4rem auto;
 }
+
+
+#competences {
+  flex-direction: column;
+}
+
+#competences h3 {
+  background: white;
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 1rem;
+}
+
+#competences h3:hover{
+  transition: 0.5s ease;
+  filter: grayscale(50%);
+  cursor: pointer;
+  color: white;
+  background: rgba(100, 100, 100, 1);
+  text-decoration: underline;
+
+}
+
 
 
 
@@ -232,22 +137,23 @@ background: rgba(100,100,100,0.5);
 }
 
 #projectsBtn {
-  border: 1px solid black;
-  border-radius: 3rem;
-  width: 70%;
+  width: 90%;
 }
 
 #projectsBtn div {
-  height: 10rem;
+  height: 12rem;
   display: flex;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/
+  justify-content: center;
+  width: 100%;
 }
 
 #projectsBtn div img {
+  
+  filter: grayscale(20%);
   background: red;
   border: 1px solid black;
-  width: 100%;
-  height: 100%;
+  gap: 0;
 }
 
 #projectsBtn h3 {
@@ -260,18 +166,22 @@ background: rgba(100,100,100,0.5);
   width: 15rem;
   color: black;
   border-radius: 1rem;
+  border: 1px solid black;
 }
 
-#projectsBtn:hover div, #projectsBtn:hover h3{
+#projectsBtn:hover div{
   transition: 0.5s ease;
-  filter: grayscale(50%);
+  cursor: pointer;
+  filter:  grayscale(60%) blur(1px);
+}
+
+#projectsBtn:hover h3{
+  transition: 0.5s ease;
   cursor: pointer;
   color: white;
   background: rgba(100, 100, 100, 1);
   text-decoration: underline;
 }
-
-
 
 
 
@@ -342,8 +252,10 @@ background: rgba(100,100,100,0.5);
 #retourCV {
   padding: 1rem;
 }
-
-
+#contact h3 button{
+  font-size: 1em;
+  padding: 0.25rem 0.5rem;
+}
 
 
 
@@ -353,6 +265,16 @@ background: rgba(100,100,100,0.5);
 
 
 @media (max-width: 1100px) {
+  
+  .main{
+  width: 90%;
+  padding: 1rem 1rem;
+}
+
+.subSection{
+ padding: 0.5rem 0.5rem;
+ width: 100%;
+}
   
   .technoProjet p {
     padding: 0 1.25rem;
@@ -382,14 +304,14 @@ background: rgba(100,100,100,0.5);
   }
 
   #projectsBtn {
-    width: 100%;
+    width: 80%;
   }
+  
 
   #projectsBtn #screen2 {
     display: none;
   }
 }
-
 
 
 
@@ -451,7 +373,9 @@ background: rgba(100,100,100,0.5);
   #projectsBtn {
     width: 80%;
   }
-
+#projectsBtn div img {
+  width: 100%;
+}
   #projectsBtn #screen2,
   #screen3 {
     display: none;
