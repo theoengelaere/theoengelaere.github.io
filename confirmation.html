@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Message Envoyé</title>
+</head>
+<body>
+    <section class="main" id="messageEnvoye">
+        <h1 class="title">Merci</h1>
+        <article>
+            <p>Votre message a bien été envoyé.</p>
+        </article>
+        <button id="retourCV" onclick="retourCV()">Retour au CV</button>
+    </section>
+    <script>
+        function retourCV(){
+            var link = document.createElement('a');
+            link.href = "./index.html";
+            link.click();
+        }
+    </script>
+    <style>
+        p{
+            text-align: justify;
+        }
+        #messageEnvoye{
+            flex-direction: column;
+            margin-top: 20vh;
+            animation: none;
+        }
+        #messageEnvoye button{
+            padding: 0.5rem 0.5rem;
+        }
+    </style>
+</body>
+</html>
