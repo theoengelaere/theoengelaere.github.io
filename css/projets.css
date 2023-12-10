@@ -41,6 +41,10 @@
   border-radius: 1rem;
 }
 
+#chasseAuMonstre .screenshots img{
+  width: 30%;
+}
+
 .screenshots img:hover, .technoProjet article p:hover {
   transition: 1sec ease;
   box-shadow: 0px 0px 10px white;
