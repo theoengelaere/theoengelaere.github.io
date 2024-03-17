@@ -23,13 +23,50 @@
         <button id="menuMobileIcone" onclick="displayMobileMenu()"><img src="./img/menu.png" alt="MENU"></button>
         <ul id="menu">
             <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
+            
+            <li><a onclick="scrollToMainSection('pizzaland')">API REST</a></li>
             <li><a onclick="scrollToMainSection('chasseAuMonstre')">Chasse Au Monstre</a></li>
             <li><a onclick="scrollToMainSection('voyagescolaires')">Gestionnaire</a></li>
             <li><a onclick="scrollToMainSection('escapeGame')">Escape Game</a></li>
             <li><a onclick="scrollToMainSection('jeuxOlympiques')">BDD JO</a></li>
         </ul>
     </header>
+
     <div id="mainContainer">
+
+        <section id="pizzaland" class="main projet">
+            <h1 class="title">API Rest Pizzaland</h1>
+            <h3>2024</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article><section id="chasseAuMonstre" class="main projet">
+            <h1 class="title">Chasse Au Monstre</h1>
+            <h3>2023</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>PostgreSQL</p>
+                    <p>Java</p>
+                    <p>Tomcat</p>
+                    <p>Arhitecture Rest</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" src="./img/projets/pizzaland/get_commandes.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/pizzaland/get_pizzas_id.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/pizzaland/post_pizzas_id.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/pizzaland/delete_pizzas_id_id.png" alt="CAP4">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Pizzaland API est un projet d'API suivant une architecture REST et implémentée en Java sur le thème d'une pizzeria. Les ressources telles que les commandes enregistrées, les pizzas disponibles et leurs ingrédients, sont disponibles en détails. De nombreuses requêtes sont disponibles tels que l'ajout, suppression, modification de ressources en détails. Par exemple : modifier les ingrédients d'une pizza, modifier le prix d'un ingrédient, se répercutant sur les prix des pizzas et commandes, enregistrer et supprimer des commandes ou pizzasn, etc.. Le serveur est composé de DAOs et controllers manipulant des DTOs, renvoyant des réponses en Json. Les requêtes de méthode GET sont publics, alors qu'un système d'authentification de type Authorization: Basic {token} est implémenté afin de resérver la manipulation de la base de données aux administrateurs</p>
+                </article>
+            </section>
+        </section>
+
+
         <section id="chasseAuMonstre" class="main projet">
             <h1 class="title">Chasse Au Monstre</h1>
             <h3>2023</h3>
@@ -143,25 +180,24 @@
     <script>
         const lbOuter = document.getElementById("lbOuter");
         const lbInner = document.getElementById("lbInner");
-        var zoomImg = function(){
-            var clone = this.cloneNode();
+        const zoomImg = function(){
+            const clone = this.cloneNode();
             clone.classList.remove("zoomable");
             lbInner.innerHTML = "";
             lbInner.appendChild(clone);
             lbOuter.style.visibility = "visible";
             lbOuter.style.opacity = "1";
         }
-        window.addEventListener("load", function(){
-            var images = document.getElementsByClassName("zoomable");
+        window.addEventListener("load", () =>{
+            const images = document.getElementsByClassName("zoomable");
+
             if(images.length > 0){
                 for(let img of images){
                     img.addEventListener("click", zoomImg);
                 }
             }
 
-
-            document.getElementById("lbOuter").addEventListener("click", function(){
-                
+            document.getElementById("lbOuter").addEventListener("click", () => {
                 lbOuter.style.visibility = "hidden";
                 lbOuter.style.opacity = "0";
             });
