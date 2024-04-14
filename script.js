@@ -1,3 +1,15 @@
+// class View{
+//     static mainElement = document.querySelector('body');
+//     constructor(path){
+//         this.path = path;
+//     }
+
+//     show(){
+//         fetch(this.path)
+//         .then(response => response.text())
+//         .then(repsonseText => this.mainElement.innerHTML = repsonseText);
+//     }
+// }
 
 const header = document.querySelector("header");
 const menuIcon = document.getElementById("menuMobileIcone");

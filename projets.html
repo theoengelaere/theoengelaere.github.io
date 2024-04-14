@@ -24,15 +24,42 @@
         <ul id="menu">
             <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
             
+            
+            <li><a onclick="scrollToMainSection('shadowwizards')">Shadow Wizards</a></li>
             <li><a onclick="scrollToMainSection('pizzaland')">API REST</a></li>
             <li><a onclick="scrollToMainSection('chasseAuMonstre')">Chasse Au Monstre</a></li>
             <li><a onclick="scrollToMainSection('voyagescolaires')">Gestionnaire</a></li>
             <li><a onclick="scrollToMainSection('escapeGame')">Escape Game</a></li>
-            <li><a onclick="scrollToMainSection('jeuxOlympiques')">BDD JO</a></li>
         </ul>
     </header>
 
     <div id="mainContainer">
+
+        <section id="shadowwizards" class="main projet">
+            <h1 class="title">Shadow Wizards</h1>
+            <h3>2024</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>Javascript</p>
+                    <p>Node.js</p>
+                    <p>Socket.io</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" src="./img/projets/shadowWzards/menu.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/shadowWizards/in_game1.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/shadowWizards/in_game2.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/shadowWizards/game_over.png" alt="CAP4">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Shadow Wizards est un projet de Shoot-them-up multijoueur a été réalisé entièrement en Javascript / Node.js. Les joueurs peuvent choisir leur nom, personnage et arme (boules de feus, pics de glace avec effet de ralentissement, ou lasers). Ils ont la possibilité de rejoindre une partie ou d’en commencer une nouvelle. Le but est de survivre le plus longtemps possible face à des vagues d’ennemis de plus en plus puissantes. Des bonus de vie et de dégâts apparaissent aléatoirement lors de mort d’ennemis. Le jeu fonctionne via des échanges socket.io entre front-end et serveur qui gère le back-end. Les scores sont enregistrés et le classement global et visualisable par tous les joueurs. </p>
+                </article>
+            </section>
+        </section>
 
         <section id="pizzaland" class="main projet">
             <h1 class="title">API REST Pizzaland</h1>
@@ -56,7 +83,7 @@
             </section>
             <section class="subSection lightblueSection">
                 <article class='descProjet'>
-                    <p>&emsp; Pizzaland API est un projet d'API suivant une architecture REST et implémentée en Java sur le thème d'une pizzeria. Les ressources telles que les commandes enregistrées, les pizzas disponibles et leurs ingrédients, sont disponibles en détails. De nombreuses requêtes sont disponibles tels que l'ajout, suppression, modification de ressources en détails. Par exemple : modifier les ingrédients d'une pizza, modifier le prix d'un ingrédient, se répercutant sur les prix des pizzas et commandes, enregistrer et supprimer des commandes ou pizzasn, etc.. Le serveur est composé de DAOs et controllers manipulant des DTOs, renvoyant des réponses en Json. Les requêtes de méthode GET sont publics, alors qu'un système d'authentification de type Authorization: Basic {token} est implémenté afin de resérver la manipulation de la base de données aux administrateurs</p>
+                    <p>&emsp; Pizzaland API est un projet d'API réalisé suivant une architecture REST et implémenté en Java sur le thème d'une pizzeria. Les ressources telles que les commandes enregistrées, les pizzas disponibles et leurs ingrédients, sont disponibles en détails. De nombreuses requêtes sont disponibles telles que l'ajout, suppression, modification de ressources en détails. Par exemple : modifier les ingrédients d'une pizza, modifier le prix d'un ingrédient, se répercutant sur les prix des pizzas et commandes, enregistrer et supprimer des commandes ou pizzas, etc... Le serveur est composé de DAOs et contrôlleurs, renvoyant les DTOs en Json. Les requêtes de méthode GET sont publiques, alors qu’un système d'authentification de type Authorization: Basic {token} est implémenté pour les autres, afin de réserver la manipulation de la base de données aux administrateurs. </p>
                 </article>
             </section>
         </section>
@@ -75,13 +102,16 @@
             </section>
             <section class="subSection lightblueSection">
                 <article class="screenshots">
-                    <img class="zoomable" src="./img/projets/chasse/chasse1.png" alt="CAP1">
-                    <img class="zoomable" src="./img/projets/chasse/chasse2.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_menu.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_parametres.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_vue_chasseur.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_vue_monstre.png" alt="CAP4">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_vue_monstre_brouillard.png" alt="CAP5">
                 </article>
             </section>
             <section class="subSection lightblueSection">
                 <article class='descProjet'>
-                    <p>&emsp; Ce projet est un jeu-vidéo 2d au tour par tour développé en Java / JavaFx. Chaque joueur incarne un monstre devant s’échapper d’un labyrinthe ou un chasseur devant trouver la position du monstre, jouant leurs coups sur la carte à la souris. Une partie peut se dérouler également avec un joueur avec le rôle de son choix face à l’ordinateur. L’application adopte une architecture MVC constituée d’un modèle et d’une vue pour chaque joueur. Divers algorithmes sont abordés dans l’application, que ce soit pour la génération du terrain paramétrable ou pour les stratégies artificielles des deux rôles. </p>
+                    <p>&emsp; Ce projet est un jeu-vidéo 2d au tour par tour développé en Java / JavaFx. Chaque joueur incarne un monstre devant s’échapper d’un labyrinthe ou un chasseur devant trouver la position des monstres, jouant leurs coups sur la carte. Une partie peut se dérouler également avec un joueur avec le rôle de son choix face à l’ordinateur. L’application adopte une architecture MVC constituée d’un modèle et d’une vue pour chaque joueur. Le labyrinthe est généré procéduralement et les intelligences artificielles de l’ordinateur utilisent divers algorithmes, notamment A* pour celle du monstre. Ce projet a requis une analyse de cahier des charges en détails ainsi qu’une planification de tâches rigoureuse.</p>
                 </article>
             </section>
         </section>
@@ -135,32 +165,6 @@
             <section class="subSection lightblueSection">
                 <article class='descProjet'>
                     <p>&emsp; Ce projet a consisté à développer un Escape Game virtuel en équipe en s'appuyant sur un diagramme de Gant et des réunions d'équipe hebdomadaires. Nous avons onceptualisé des énigmes variées ainsi que de développer un scénario et un univers captivant que nous avons implémentés entièrement en HTML/CSS/Javascript. Le jeu est destiné à des étudiants en informatique de première année, il simule un Shell Linux dans lequel le joueur doit recolter des informations et modifier des données en Bash durant les énigmes.</p>
-                </article>
-            </section>
-        </section>
-
-        <section id="jeuxOlympiques" class="main projet">
-            <h1 class="title">Base de données Jeux Olympiques</h1>
-            <h3>2023</h3>
-            <section class="subSection lightblueSection technoProjet">
-                <h3>Les Technos</h3>
-                <article>
-                    <p>PostgreSQL</p>
-                    <p>Scripts SQL</p>
-                    <p>MCD</p>
-                </article>
-            </section>
-            <section class="subSection lightblueSection">
-                <article class="screenshots">
-                    <img class="zoomable" src="./img/projets/BDD/script1.png" alt="CAP1">
-                </article>
-            </section>
-            <section class="subSection lightblueSection">
-                <article class='descProjet'>
-                    <p>&emsp; L’objectif de ce projet etait de construire une base de données, référençant tous les 
-                        résultats de tous les participants de tous les Jeux Olympiques de 1920 à 2016. Commençant 
-                        avec des données brutes, nous les avons normalisées et importées grâce a des scripts SQL dans une base de données que nous avons conceptualisée avec un Modèle Conceptuel de Données puis implémentée sur PostgreSQL.
-                        Nous avons ensuite exploité la base de données afin de réaliser une étude statistique en effectuant diverses requêtes spécifiques.</p>
                 </article>
             </section>
         </section>
