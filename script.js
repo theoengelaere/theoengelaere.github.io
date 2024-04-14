@@ -125,10 +125,10 @@ function openLinkedIn() {
     window.open("https://www.linkedin.com/in/theo-engelaere", '_blank');
 }
 function downloadCV() {
-    const pdfURL = './download/CV_Theo_Engelaere_2023.pdf';
+    const pdfURL = './download/CV_Theo_Engelaere_2024.pdf';
     const link = document.createElement('a');
     link.href = pdfURL;
-    link.download = 'CV_Theo_Engelaere_2023.pdf';
+    link.download = 'CV_Theo_Engelaere_2024.pdf';
     link.target = '_blank';
     link.click();
 }
