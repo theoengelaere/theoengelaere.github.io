@@ -2,7 +2,7 @@ import { Container, Row } from 'react-bootstrap';
 import '../../css/about.css';
 import { forwardRef } from 'react';
 
-const About = forwardRef<HTMLDivElement>((props, ref) => {
+const About = forwardRef<HTMLDivElement>((_, ref) => {
 	return (
 		<section className="banner about" id="about" ref={ref}>
 			<Container>

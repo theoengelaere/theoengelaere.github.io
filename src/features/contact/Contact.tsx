@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 
 import { forwardRef } from 'react';
 
-const Contact = forwardRef<HTMLDivElement>((props, ref) => {
+const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 	const form = useRef();
 
 	const sendEmail = (e: React.FormEvent) => {

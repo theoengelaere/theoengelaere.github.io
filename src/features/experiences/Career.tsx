@@ -2,7 +2,7 @@ import { Container, Row } from 'react-bootstrap';
 import '../../css/carrer.css';
 import { forwardRef } from 'react';
 
-const Career = forwardRef<HTMLDivElement>((props, ref) => {
+const Career = forwardRef<HTMLDivElement>((_, ref) => {
 	return (
 		<section id="parcours" className="career banner" ref={ref}>
 			<Container>

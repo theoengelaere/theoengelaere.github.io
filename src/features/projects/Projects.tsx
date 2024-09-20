@@ -22,7 +22,7 @@ import shadow4 from '../../assets/img/projects/shadowWizards/shadow_wizard_2.png
 import shadow5 from '../../assets/img/projects/shadowWizards/shadow_wizard_game_over.png';
 import { forwardRef } from 'react';
 
-const Projects = forwardRef<HTMLDivElement>((props, ref) => {
+const Projects = forwardRef<HTMLDivElement>((_, ref) => {
 	const cardsProps: ProjectCardProps[] = [
 		{
 			title: 'Pizzaland API',

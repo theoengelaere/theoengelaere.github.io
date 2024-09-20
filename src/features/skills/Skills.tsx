@@ -38,7 +38,7 @@ type SkillProps = {
 	cards: SkillCardProps[];
 };
 
-const Skills = forwardRef<HTMLDivElement>((props, ref) => {
+const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 	const mySkills: SkillProps[] = [
 		{
 			title: 'Développement web back-end',
