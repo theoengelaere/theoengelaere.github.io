@@ -1,0 +1,73 @@
+/* :root {
+	--slider-card-width: 200px;
+} */
+
+.slider {
+	position: relative;
+	width: 100%;
+	/* background-color: red !important;
+	z-index: 100; */
+	/* height: 100%; */
+}
+.slider .wrapper {
+	/* background-color: var(--main-bg-color); */
+	position: relative;
+	/* height: 200px; */
+	width: 100%;
+	/* overflow: visible; */
+	z-index: 1;
+	overflow: hidden;
+}
+
+.slider .card {
+	/* background-color: var(--secondary-bg-color); */
+	/* padding: 20px 30px; */
+	/* width: 200px; */
+	height: 100%;
+	position: absolute;
+	/* border-radius: 5%; */
+	text-align: center;
+	transition: 0.5s;
+	left: calc(50% - calc(var(--slider-card-width) / 2));
+
+	/* left: calc(50% - 100px); */
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider #next,
+.slider #prev {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: monospace;
+	top: 50%;
+	z-index: 1;
+	& img {
+		filter: invert(0.5);
+	}
+	/* color: var(--accent-color);
+	font-weight: 700 !important;
+	font-size: 4rem;
+	font-family: Spa; */
+}
+.slider #prev {
+	left: 10%;
+}
+.slider #next {
+	right: 10%;
+}
+
+.slider .card img {
+	/* width: 90%; */
+	/* max-width: 180px; */
+}
+
+.slider .card h2 {
+	font-size: 1.5rem !important;
+}

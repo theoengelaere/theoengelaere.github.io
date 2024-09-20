@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>CV - Théo Engelaere</title>
+</head>
+
+<body>
+    <header>
+        <section id="headerName">
+            <h1>Théo Engelaere</h1>
+        </section>
+        <button id="menuMobileIcone" onclick="displayMobileMenu()"><img src="./img/menu.png" alt="MENU"></button>
+        <ul id="menu">
+            <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
+            <li><a onclick="scrollToMainSection('aProposDeMoi')">A propos de moi</a></li>
+            <li><a onclick="scrollToMainSection('formations')">Formations</a></li>
+            <li><a onclick="scrollToMainSection('competences')">Compétences</a></li>
+            <li><a onclick="scrollToMainSection('projects')">Projets</a></li>
+            <li><a onclick="scrollToMainSection('viePerso')">Vie Perso</a></li>
+            <li><a onclick="scrollToMainSection('contact')">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="mainContainer">
+        <section id="presentation" class="main">
+            <img src="img/photo.jpg" alt="photo" id="photo">
+            <section class="subSection">
+                <article>
+                    <h2>Je m'appelle Théo Engelaere, étudiant en BUT Informatique.</h2>
+                    <p>Je suis en recherche d'un stage en développement pour avril 2024</p>
+                </article>
+                <div id="mainButtons">
+                    <button class="mainButton" onclick="scrollToMainSection('contact')">Contactez-moi <img
+                            src="./img/email.png" alt=""></button>
+                    <button class="mainButton" onclick="downloadCV()">Téléchargez mon CV <img
+                            src="./img/telecharger.png" alt=""></button>
+                    <button class="reseaux" onclick="openLinkedIn()"><img src="./img/linkedin.png" alt="Lkin"></button>
+
+                </div>
+            </section>
+        </section>
+        <section id="aProposDeMoi" class="main">
+            <article>
+                <h1 class="title">A propos de moi</h1>
+                <p>
+                    &emsp;&emsp;En tant qu'étudiant en deuxième année de BUT Informatique à l'IUT de Lille, je suis passionné par le monde du développement et mon apprentissage s'inscrit dans une démarche active d'acquisition de compétences. En vue d'acquérir de l'expérience professionnelle, je suis actuellement à la recherche d'un stage pour avril 2024.
+                </p>
+                <p>
+                    &emsp;&emsp;Au cours de mes études, j'ai participé à une multitude de projets en travaillant au sein d'une équipe ou en autonomie. Cette diversité d'expériences m'a conduit à concevoir des applications et des pages web complètes. En réalisant ces projets, j'ai eu l'opportunité de plonger concrètement dans l'application des méthodes agiles, expérimentant ainsi les cycles de développement efficaces.
+                </p>
+                <p>
+                    &emsp;&emsp;Je suis maintenant prêt à relever de nouveaux défis et à apporter ma contribution à un environnement professionnel. Mon objectif est de mettre en pratique mes compétences techniques et mon savoir-faire, tout en acquérant l'expertise d'une entreprise.
+                </p>
+            </article>
+        </section>
+        <section id="formations" class="main">
+            <h1 class="title">Mon Parcours</h1>
+            <section class="subSection lightblueSection">
+                <h3>Mes Diplômes et formations</h3>
+                <table>
+                    <tr>
+                        <td class="date">2022-Présent</td>
+                        <td class="exp">
+                            <p class="dateMedia">2022-Présent</p>
+                            BUT Informatique (2e année) - IUT de Lille
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date">2021-2022</td>
+                        <td class="exp">
+                            <p class="dateMedia">2021-2022</p>
+                            CAP Pâtiserie - Les Compagnons du Devoir
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020</td>
+                        <td class="exp">
+                            <p class="dateMedia">2020</p>
+                            BAC S (Mention Bien) - Lycée Queneau, Villeneuve-d'Ascq
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="subSection lightblueSection">
+                <h3>Mon expérience</h3>
+                <table>
+                    <tr>
+                        <td class="date">2021-2022</td>
+                        <td class="exp">
+                            <p class="dateMedia">2021-2022</p>
+                            Alternance en pâtisserie - Les Pétales Gourmandes, Ronchin
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        
+        <section id="competences" class="main">
+            <h1 class="title">Mes compétences</h1>
+            <section class="subSection lightblueSection">
+            <article>
+                <p>
+                    &emsp;Découvrez l'étendue de mes compétences en matière de développement. Parcourez ma page dédiée à l'univers de mes compétences techniques en cliquant sur le bouton ci-dessous.
+                </p>
+                <h3 onclick="window.open('./competences.html','_self')">Retrouver toutes mes compétences ici</h3>
+            </article>
+            </section>
+        </section>
+        <section id="projects" class="main">
+            <h1 class="title">Mes projets</h1>
+            <section class="subSection lightblueSection">
+                <p>&emsp; Explorez l'éventail de mes projets étudiants, allant de jeux vidéo à des bases de données robustes, en passant par un gestionnaire intuitif de voyage scolaire. Cliquez-sur le bouton ci-dessous pour voir mes créations.</p>
+            <div id="projectsBtn" onclick="window.open('./projets.html','_self')">
+                <div >
+                    <img id="screen1" src="./img/projets/gestionnaire/4.png" alt=" IMG1">
+                    <img id="screen2" src="./img/projets/gestionnaire/9.png" alt="IMG2">
+                    <img id="screen3" src="./img/projets/chasse/chasse2.png" alt="IMG3">
+                    <img id="screen4" src="./img/projets/escapeGame/affiche.png" alt="IMG4">
+                </div>
+                <h3>Consulter mes projets</h3>
+            </div>
+        </section>
+        </section>
+        <section id="viePerso" class="main">
+            <h1 class="title">Vie personnelle</h1>
+            <article>
+                <h2>Moyens de locomotion</h2>
+                <ul>
+                    <li>Voiture</li>
+                    <li>Transports en commun</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Mes loisirs</h2>
+                <ul>
+                    <li>Jeux vidéo</li>
+                    <li>Marche à pied</li>
+                    <li>Développement</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="contact" class="main">
+            <h1 class="title">Me contacter</h1>
+            <h3>retrouvez-moi sur <button onclick="openLinkedIn()">LinkedIn</button> ou envoyez-moi un message via le formulaire ci-dessous.</h3>
+            <form id="contactForm" class="lightblueSection"
+                action="https://formsubmit.co/2caa30b35ab780345d1b222ea9253f1c " method="POST">
+                <div class="formContainer">
+                    <label for="name">Nom :</label>
+                    <input name="name" type="text" id="name" required>
+                </div>
+                <div class="formContainer">
+                    <label for="email">Email :</label>
+                    <input name="email" type="email" id="email" required>
+                </div>
+                <div class="formContainer">
+                    <label for="message">Message :</label>
+                    <textarea type="text" id="message" name="message" rows="8" required></textarea>
+                </div>
+                <input type="hidden" name="_next" value="https://theoengelaere.github.io/confirmation.html">
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <button id="scrollToTopBtn" onclick="scrollToTop()">
+            <img src="./img/up.png" alt="UP">
+        </button>
+    </footer>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

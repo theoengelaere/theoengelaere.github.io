@@ -1,0 +1,152 @@
+.career {
+	background-color: var(--main-bg-color);
+}
+
+.timeline {
+	position: relative;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		content: '';
+		background-color: var(--neutral-dark);
+	}
+}
+
+.timeline li {
+	position: relative;
+	right: 0;
+	margin-right: 0;
+
+	& .title {
+		position: absolute;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* align-items: flex-end; */
+		/* align-items: center; */
+		height: 80px;
+
+		& h2 {
+			margin: 0;
+		}
+	}
+
+	& .description {
+		font-size: 1.1rem;
+		margin-top: 5px;
+	}
+}
+
+@media (min-width: 0px) {
+	.timeline li {
+		& .title {
+			width: 35%;
+		}
+		& .description {
+			margin-left: 35%;
+		}
+	}
+}
+@media (min-width: 576px) {
+	.timeline li {
+		& .title {
+			width: 30%;
+		}
+
+		& .description {
+			margin-left: 35%;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.timeline li {
+		& .title {
+			width: 35%;
+		}
+
+		& .description {
+			margin-left: 35%;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.timeline {
+		width: 100%;
+		max-width: 100%;
+	}
+	.timeline li {
+		width: 50%;
+		display: flex;
+		margin-top: 20px;
+
+		&::after {
+			/* content: 'aaa'; */
+			/* height: 2px; */
+			/* width: 50px; */
+			/* background-color: var(--neutral-dark); */
+			/* position: absolute; */
+			/* top: calc(50% - 2px); */
+			/* right: -0px; */
+		}
+
+		& .title {
+			width: 300px;
+			margin-left: 110%;
+			align-items: flex-start;
+
+			&::after {
+				content: '';
+				height: 2px;
+				width: 50px;
+				background-color: var(--neutral-dark);
+				position: absolute;
+				top: calc(30% - 2px);
+				right: 320px;
+				/* left: -75px; */
+			}
+		}
+
+		& .description {
+			width: 100%;
+
+			margin-left: 0;
+			margin-right: 30px;
+		}
+	}
+	.timeline li:nth-child(odd) {
+		align-self: flex-end;
+
+		& .title {
+			margin-left: -350px;
+			align-items: flex-end;
+
+			&::after {
+				right: -75px;
+				/* left: 0 !important; */
+			}
+		}
+
+		& .description {
+			margin-left: 30px;
+			margin-right: 0px;
+		}
+	}
+	.timeline::before {
+		right: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

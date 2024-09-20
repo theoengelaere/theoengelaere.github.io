@@ -1,0 +1,109 @@
+/************ Navbar Css ************/
+nav.navbar * {
+	font-size: 1.5rem;
+}
+
+nav.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+	transition: 0.32s ease-in-out;
+	/* background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.6) 20%,
+		rgba(0, 0, 0, 0.9) 100%
+	); */
+	/* background: linear-gradient(
+		0deg,
+		rgba(247, 243, 233, 0) 0%,
+		rgba(240, 237, 228, 0.6) 20%,
+		rgba(227, 224, 216, 0.9) 100%
+	); */
+	backdrop-filter: blur(1px);
+}
+
+nav.navbar.scrolled {
+	padding: 10px 0;
+	background: none;
+	/* background-color: rgb(31, 48, 85); */
+	background-color: var(--bright-bg-color);
+	box-shadow: 0px 0px 8px var(--neutral-dark);
+}
+
+nav.navbar .navbar-nav {
+	gap: 0.25rem;
+}
+
+nav.navbar a.navbar-brand {
+	width: fit-content;
+	font-weight: 600 !important;
+	color: var(--primary-color) !important;
+}
+
+nav.navbar .navbar-nav .nav-link {
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	font-size: 1.25rem;
+	opacity: 1;
+	color: var(--secondary-title-color) !important;
+}
+
+nav.navbar .nav-link.active {
+	text-decoration: underline;
+	text-underline-offset: 0.1rem;
+}
+
+nav.navbar .navbar-nav .nav-link:hover,
+nav.navbar .navbar-nav .nav-link.active {
+	font-weight: 600;
+}
+
+/*Navbar Toggler*/
+nav.navbar .navbar-toggler {
+	/* border: 1px solid white; */
+	border: 2px solid rgb(104, 104, 104);
+	border-radius: 15%;
+	width: 45px;
+	height: 45px;
+	padding: 10px;
+}
+
+nav.navbar .navbar-toggler .navbar-toggler-icon {
+	/* filter: invert(100%); */
+	width: 100%;
+	height: 100%;
+	vertical-align: auto;
+}
+
+@media (min-width: 0px) {
+	nav.navbar {
+		padding: 16px 0;
+		background: linear-gradient(
+			0deg,
+			rgba(238, 230, 211, 0) 0%,
+			rgba(240, 237, 228, 1) 30%,
+			rgba(240, 237, 228, 0.9) 100%
+		);
+	}
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+	nav.navbar {
+		padding: 24px 0;
+		background: linear-gradient(
+			0deg,
+			rgba(247, 243, 233, 0) 0%,
+			rgba(240, 237, 228, 0.6) 20%,
+			rgba(227, 224, 216, 0.9) 100%
+		);
+	}
+
+	nav.navbar a.navbar-brand {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 992px) {
+}

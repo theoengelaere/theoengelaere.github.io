@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théo Engelaere - Mes Projets</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/projets.css">
+</head>
+
+<body>
+    <div id="lbOuter">
+        <div id="lbInner"></div>
+    </div>
+    <header>
+        <section id="headerName">
+            
+            <button id='goBack' onclick="window.open('./index.html','_self')"><img src="./img/arrow_left.png" alt="Back"></button>
+            <h1>Mes Projets</h1>
+        </section>
+        <button id="menuMobileIcone" onclick="displayMobileMenu()"><img src="./img/menu.png" alt="MENU"></button>
+        <ul id="menu">
+            <button id="closeMenu" onclick="closeMobileMenu()"><img src="./img/close.png" alt="CLOSE"></button>
+            
+            
+            <li><a onclick="scrollToMainSection('shadowwizards')">Shadow Wizards</a></li>
+            <li><a onclick="scrollToMainSection('pizzaland')">API REST</a></li>
+            <li><a onclick="scrollToMainSection('chasseAuMonstre')">Chasse Au Monstre</a></li>
+            <li><a onclick="scrollToMainSection('voyagescolaires')">Gestionnaire</a></li>
+            <li><a onclick="scrollToMainSection('escapeGame')">Escape Game</a></li>
+        </ul>
+    </header>
+
+    <div id="mainContainer">
+
+        <section id="shadowwizards" class="main projet">
+            <h1 class="title">Shadow Wizards</h1>
+            <h3>2024</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>Javascript</p>
+                    <p>Node.js</p>
+                    <p>Socket.io</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" src="./img/projets/shadowWzards/menu.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/shadowWizards/in_game1.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/shadowWizards/in_game2.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/shadowWizards/game_over.png" alt="CAP4">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Shadow Wizards est un projet de Shoot-them-up multijoueur a été réalisé entièrement en Javascript / Node.js. Les joueurs peuvent choisir leur nom, personnage et arme (boules de feus, pics de glace avec effet de ralentissement, ou lasers). Ils ont la possibilité de rejoindre une partie ou d’en commencer une nouvelle. Le but est de survivre le plus longtemps possible face à des vagues d’ennemis de plus en plus puissantes. Des bonus de vie et de dégâts apparaissent aléatoirement lors de mort d’ennemis. Le jeu fonctionne via des échanges socket.io entre front-end et serveur qui gère le back-end. Les scores sont enregistrés et le classement global et visualisable par tous les joueurs. </p>
+                </article>
+            </section>
+        </section>
+
+        <section id="pizzaland" class="main projet">
+            <h1 class="title">API REST Pizzaland</h1>
+            <h3>2024</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>PostgreSQL</p>
+                    <p>Java</p>
+                    <p>Tomcat</p>
+                    <p>Arhitecture Rest</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" src="./img/projets/pizzaland/get_commandes.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/pizzaland/get_pizzas_id.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/pizzaland/post_pizzas_id.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/pizzaland/delete_pizzas_id_id.png" alt="CAP4">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Pizzaland API est un projet d'API réalisé suivant une architecture REST et implémenté en Java sur le thème d'une pizzeria. Les ressources telles que les commandes enregistrées, les pizzas disponibles et leurs ingrédients, sont disponibles en détails. De nombreuses requêtes sont disponibles telles que l'ajout, suppression, modification de ressources en détails. Par exemple : modifier les ingrédients d'une pizza, modifier le prix d'un ingrédient, se répercutant sur les prix des pizzas et commandes, enregistrer et supprimer des commandes ou pizzas, etc... Le serveur est composé de DAOs et contrôlleurs, renvoyant les DTOs en Json. Les requêtes de méthode GET sont publiques, alors qu’un système d'authentification de type Authorization: Basic {token} est implémenté pour les autres, afin de réserver la manipulation de la base de données aux administrateurs. </p>
+                </article>
+            </section>
+        </section>
+
+
+        <section id="chasseAuMonstre" class="main projet">
+            <h1 class="title">Chasse Au Monstre</h1>
+            <h3>2023</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>Java</p>
+                    <p>Java FX</p>
+                    <p>Arhitecture MVC</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_menu.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_parametres.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_vue_chasseur.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_vue_monstre.png" alt="CAP4">
+                    <img class="zoomable" src="./img/projets/chasse/chasse_au_monstre_vue_monstre_brouillard.png" alt="CAP5">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Ce projet est un jeu-vidéo 2d au tour par tour développé en Java / JavaFx. Chaque joueur incarne un monstre devant s’échapper d’un labyrinthe ou un chasseur devant trouver la position des monstres, jouant leurs coups sur la carte. Une partie peut se dérouler également avec un joueur avec le rôle de son choix face à l’ordinateur. L’application adopte une architecture MVC constituée d’un modèle et d’une vue pour chaque joueur. Le labyrinthe est généré procéduralement et les intelligences artificielles de l’ordinateur utilisent divers algorithmes, notamment A* pour celle du monstre. Ce projet a requis une analyse de cahier des charges en détails ainsi qu’une planification de tâches rigoureuse.</p>
+                </article>
+            </section>
+        </section>
+
+
+        <section id="voyagescolaires" class="main projet">
+            <h1 class="title">Gestionnaire de voyage scolaire</h1>
+            <h3>2023</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>Java</p>
+                    <p>Java FX</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" src="./img/projets/gestionnaire/3.png" alt="CAP1">
+                    <img class="zoomable" src="./img/projets/gestionnaire/4.png" alt="CAP2">
+                    <img class="zoomable" src="./img/projets/gestionnaire/5.png" alt="CAP3">
+                    <img class="zoomable" src="./img/projets/gestionnaire/7.png" alt="CAP4">
+                    <img class="zoomable" src="./img/projets/gestionnaire/9.png" alt="CAP5">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Le but de projet était de développer un gestionnaire de voyages scolaires en Java / JavaFx destiné aux organisateurs. Le principe de l’application est de répartir de manière optimisée des élèves invités chez des élèves hôtes d’un autre pays. Pour cela, les informations de chaque élève peuvent être saisies via un formulaire ou être importées automatiquement via un fichier CSV. L’utilisateur lance ensuite un appariement automatique entre deux listes d’élèves s'appuyant sur un graphe, cet appariement prend en compte toutes les contraintes (allergies, régime alimentaire, …) et toutes les préférences (âge, centres d’intérêts, …) de chaque élève ainsi que des éventuels impératifs de l’utilisateur. Les résultats sont visualisables en détails dans l’application et peuvent être ensuite sauvegardés et exportés au format CSV.</p>
+                </article>
+            </section>
+        </section>
+
+
+
+        <section id="escapeGame" class="main projet">
+            <h1 class="title">Escape Game</h1>
+            <h3>2023</h3>
+            <section class="subSection lightblueSection technoProjet">
+                <h3>Les Technos</h3>
+                <article>
+                    <p>HTML/CSS</p>
+                    <p>Javascript</p>
+                    <p>Gant</p>
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class="screenshots">
+                    <img class="zoomable" id="affiche" src="./img/projets/escapeGame/affiche.png" alt="CAP1">
+                    <img class="zoomable" id="screenJeu" src="./img/projets/escapeGame/screen1.png" alt="CAP2">
+                </article>
+            </section>
+            <section class="subSection lightblueSection">
+                <article class='descProjet'>
+                    <p>&emsp; Ce projet a consisté à développer un Escape Game virtuel en équipe en s'appuyant sur un diagramme de Gant et des réunions d'équipe hebdomadaires. Nous avons onceptualisé des énigmes variées ainsi que de développer un scénario et un univers captivant que nous avons implémentés entièrement en HTML/CSS/Javascript. Le jeu est destiné à des étudiants en informatique de première année, il simule un Shell Linux dans lequel le joueur doit recolter des informations et modifier des données en Bash durant les énigmes.</p>
+                </article>
+            </section>
+        </section>
+
+    </div>
+    <footer>
+        <button id="scrollToTopBtn" onclick="scrollToTop()">
+            <img src="./img/up.png" alt="UP">
+        </button>
+    </footer>
+    <script src="./script.js"></script>
+    <script>
+        const lbOuter = document.getElementById("lbOuter");
+        const lbInner = document.getElementById("lbInner");
+        const zoomImg = function(){
+            const clone = this.cloneNode();
+            clone.classList.remove("zoomable");
+            lbInner.innerHTML = "";
+            lbInner.appendChild(clone);
+            lbOuter.style.visibility = "visible";
+            lbOuter.style.opacity = "1";
+        }
+        window.addEventListener("load", () =>{
+            const images = document.getElementsByClassName("zoomable");
+
+            if(images.length > 0){
+                for(let img of images){
+                    img.addEventListener("click", zoomImg);
+                }
+            }
+
+            document.getElementById("lbOuter").addEventListener("click", () => {
+                lbOuter.style.visibility = "hidden";
+                lbOuter.style.opacity = "0";
+            });
+        });
+    </script>
+</body>
+
+</html>

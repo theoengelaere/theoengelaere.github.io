@@ -1,0 +1,12 @@
+.about {
+	/* background-color: rgb(75, 85, 107); */
+	background-color: var(--alt-bg-color);
+}
+
+.about .container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	font-size: 1.2rem;
+	text-align: justify;
+}

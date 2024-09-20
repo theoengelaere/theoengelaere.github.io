@@ -1,0 +1,201 @@
+/************ Default Css ************/
+/* :root {
+	--main-bg-color: #272b3e;
+	--secondary-bg-color: #495d8c;
+	--alt-bg-color: rgb(43, 49, 66);
+	--bright-bg-color: #33487a;
+
+	--primary-color: rgb(255, 255, 255);
+	--title-color: #ffffff;
+	--secondary-title-color: rgb(226, 226, 226);
+	--text-color: #ffffff;
+
+	--accent-color: rgb(157, 240, 255);
+
+	--neutral-dark: #1e1e2e;
+	--neutral-bright: #535669;
+} */
+
+/* :root {
+	--main-bg-color: #f4f4f4;
+	--secondary-bg-color: #cfcfcf;
+	--alt-bg-color: #f4f4f4;
+	--bright-bg-color: #ffffff;
+
+	--primary-color: rgb(112, 174, 255);
+	--title-color: #00121b;
+	--secondary-title-color: rgb(0, 1, 59);
+	--text-color: #454545;
+
+	--accent-color: rgb(157, 240, 255);
+
+	--neutral-dark: #82829e;
+	--neutral-bright: #c9cef0;
+} */
+
+/* :root {
+	--main-bg-color: #272b3e;
+	--secondary-bg-color: #495d8c;
+	--alt-bg-color: rgb(24, 38, 64);
+	--bright-bg-color: #182441;
+
+	--primary-color: rgb(255, 255, 255);
+	--title-color: #3c97ff;
+	--secondary-title-color: rgb(210, 232, 255);
+	--text-color: #dcdcdc;
+
+	--accent-color: rgb(157, 240, 255);
+
+	--neutral-dark: #1e1e2e;
+	--neutral-bright: #535669;
+} */
+
+:root {
+	--main-bg-color: rgb(255, 247, 234);
+	--secondary-bg-color: #e0ddd700;
+	--alt-bg-color: rgb(255, 249, 237);
+	--bright-bg-color: rgb(255, 246, 235);
+
+	--primary-color: rgb(40, 36, 29);
+	--title-color: rgb(70, 58, 47);
+	--secondary-title-color: rgb(114, 96, 80);
+	--text-color: #454545;
+
+	--accent-color: rgb(157, 240, 255);
+
+	--neutral-dark: #82829e;
+	--neutral-bright: #c9cef0;
+}
+
+@font-face {
+	font-family: LeagueSpartan;
+	src: url('../assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	/* scroll-padding-top: 75px; */
+}
+
+body {
+	font-family: 'LeagueSpartan', sans-serif !important;
+	height: 200vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	text-align: center;
+}
+
+h1 {
+	color: var(--title-color) !important;
+}
+h2,
+h3 {
+	color: var(--secondary-title-color) !important;
+}
+
+p,
+span,
+label {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+p {
+	text-align: justify;
+}
+
+button span {
+	/* color: var(--accent-color) !important; */
+}
+button {
+	border: 0;
+	background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+.features {
+	padding: 0 !important;
+}
+
+.features,
+.banner {
+	width: 100% !important;
+	max-width: 100% !important;
+	/* background-color: red; */
+}
+
+.section-title {
+	margin-bottom: 4rem;
+}
+
+.card {
+	border: none !important;
+}
+
+@media (min-width: 0px) {
+	.features section:first-of-type {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.features .container {
+		padding: 30px 20px;
+	}
+}
+@media (min-width: 576px) {
+	.features .container {
+		padding: 30px 30px;
+		width: 85% !important;
+		max-width: 85% !important;
+	}
+}
+@media (min-width: 768px) {
+	.features section:first-of-type {
+		padding: 150px 30px;
+	}
+}
+@media (min-width: 992px) {
+	.features section:first-of-type {
+		padding-top: 200px;
+	}
+	.features .container {
+		padding: 80px 40px;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	section .container {
+		max-width: 90% !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	section .container {
+		max-width: 80% !important;
+	}
+}
