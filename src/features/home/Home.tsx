@@ -15,9 +15,8 @@ export default function Home() {
 	const [homeHeight, setHomeHeight] = useState(0);
 
 	function downloadCV() {
-		const pdfURL = '../assets/pdf/CV_Theo_Engelaere_2024.pdf';
 		const link = document.createElement('a');
-		link.href = pdfURL;
+		link.href = '/CV_Theo_Engelaere_2024.pdf';
 		link.download = 'CV_Theo_Engelaere_2024.pdf';
 		link.target = '_blank';
 		link.click();
