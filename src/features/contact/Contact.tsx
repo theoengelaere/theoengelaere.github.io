@@ -1,16 +1,21 @@
 import { Container } from 'react-bootstrap';
 import '../../css/contact.css';
 // import { CaretRightFill } from 'react-bootstrap-icons';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { forwardRef } from 'react';
 
 const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 	const form = useRef();
+	const [sendStatus, setSendStatus] = useState<
+		'unsent' | 'sending' | 'sent' | 'error'
+	>('unsent');
 
 	const sendEmail = (e: React.FormEvent) => {
 		e.preventDefault();
+		if (sendStatus != 'unsent') return;
+		setSendStatus('sending');
 
 		emailjs
 			.sendForm('service_un820te', 'template_d98kflq', form.current, {
@@ -18,9 +23,11 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 			})
 			.then(
 				() => {
+					setSendStatus('sent');
 					console.log('Email envoyé avec succès');
 				},
 				error => {
+					setSendStatus('error');
 					console.log("Echec de l'envoi de l'mail : ", error.text);
 				}
 			);
@@ -36,8 +43,36 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 								<h2>
 									<span>Mon profil vous intéresse ?</span>
 									<br />
-									N'hésitez pas à me laiser un message
+									N'hésitez pas à me laisser un message
 								</h2>
+								<div className="coord">
+									<h3>Ou à me contacter</h3>
+									<div className="coord-item">
+										<span>
+											Par email:
+											<a href="mailto:theo.engelaere.etu@univ-lille.fr">
+												theo.engelaere.etu@univ-lille.fr
+											</a>
+										</span>
+									</div>
+									<div className="coord-item">
+										<span>
+											Via LinkedIn:
+											<a
+												href="#"
+												onClick={e => {
+													e.preventDefault();
+													window.open(
+														'https://www.linkedin.com/in/theo-engelaere',
+														'_blank'
+													);
+												}}
+											>
+												theo-engelaere
+											</a>
+										</span>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div className="col-lg-12 col-xl-6">
@@ -70,8 +105,14 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 										</label>
 										<textarea name="message" className="form-control" />
 									</div>
-									<button type="submit" className="btn btn-primary">
-										Envoyer
+									<button
+										type="submit"
+										className={`btn submit ${sendStatus} btn-primary`}
+									>
+										{' '}
+										{sendStatus === 'sending' && (
+											<div className="loading-spinner"></div>
+										)}
 									</button>
 								</form>
 							</div>
