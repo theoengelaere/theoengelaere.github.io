@@ -165,12 +165,21 @@ select:focus {
 	.features .container {
 		padding: 30px 20px;
 	}
+	/* p, label, textarea{
+		font-size: 1rem;
+	} */
+	h2{
+		/* font-size: 1.4rem !important; */
+	}
 }
 @media (min-width: 576px) {
 	.features .container {
 		padding: 30px 30px;
 		width: 85% !important;
 		max-width: 85% !important;
+	}
+	p, label, textarea{
+		font-size: 1.1rem;
 	}
 }
 @media (min-width: 768px) {
@@ -191,6 +200,9 @@ select:focus {
 @media (min-width: 1200px) {
 	section .container {
 		max-width: 90% !important;
+	}
+	p, label, textarea{
+		font-size: 1.2rem;
 	}
 }
 

@@ -178,3 +178,55 @@
 	height: 400px;
 	max-width: 100%;
 } */
+
+@media (min-width: 0px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+
+/* .skills .card {
+	background-color: rgb(67, 67, 145);
+	box-sizing: border-box;
+	padding: 20px 30px;
+	flex-shrink: 0;
+	width: 300px;
+	border-radius: 14px;
+	text-align: center;
+	scroll-snap-align: center;
+}
+
+.skills .wrapper {
+	background-color: red;
+	display: flex;
+	overflow-x: scroll;
+	gap: 20px;
+	width: 300px;
+	scroll-snap-type: x mandatory;
+} */
+
+@media (max-width: 992px) {
+	.projects {
+		& .cards-container {
+			width: 100%;
+			margin-left: auto;
+			flex-wrap: nowrap;
+			overflow: scroll;
+			/* background-color: red; */
+			scroll-snap-type: x mandatory;
+			/* width: 300px; */
+		}
+
+		& .project-card {
+			flex-shrink: 0;
+			scroll-snap-align: center;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

@@ -34,9 +34,10 @@
 		height: 130px;
 
 		& .coord-item {
-			width: 400px;
+			/* width: 400px; */
 			margin: auto;
 			display: flex;
+			flex-wrap: wrap;
 			font-size: 1.1rem;
 
 			& a {
@@ -170,6 +171,29 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.right {
+		padding: 25px;
+		& svg {
+			top: 25px;
+			transform: rotate(90deg);
+			left: 45%;
+		}
+		& button.submit {
+			width: 150px;
+			padding: 12px 0;
+		}
+	}
+	.left {
+		padding: 90px 15px;
+		text-align: center;
+
+		& h2 {
+			font-size: 25px;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.right {
 		& svg {
@@ -193,28 +217,5 @@
 	.left {
 		/* padding: 200px 40px; */
 		height: 100%;
-	}
-}
-
-@media (max-width: 768px) {
-	.right {
-		padding: 25px;
-		& svg {
-			top: 25px;
-			transform: rotate(90deg);
-			left: 45%;
-		}
-		& button.submit {
-			width: 150px;
-			padding: 12px 0;
-		}
-	}
-	.left {
-		padding: 90px 15px;
-		text-align: center;
-
-		& h2 {
-			font-size: 25px;
-		}
 	}
 }

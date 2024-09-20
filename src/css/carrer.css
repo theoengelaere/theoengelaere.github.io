@@ -31,9 +31,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		/* align-items: flex-end; */
-		/* align-items: center; */
-		height: 80px;
+		align-items: center;
+		width: fit-content;
 
 		& h2 {
 			margin: 0;
@@ -41,7 +40,6 @@
 	}
 
 	& .description {
-		font-size: 1.1rem;
 		margin-top: 5px;
 	}
 }
@@ -49,32 +47,32 @@
 @media (min-width: 0px) {
 	.timeline li {
 		& .title {
-			width: 35%;
+			width: 90%;
+			right: 0;
+			height: 50px;
 		}
 		& .description {
-			margin-left: 35%;
+			margin-left: 10px;
+			margin-top: 60px;
 		}
 	}
 }
 @media (min-width: 576px) {
-	.timeline li {
-		& .title {
-			width: 30%;
-		}
-
-		& .description {
-			margin-left: 35%;
-		}
+	.timeline li .description{
+		margin-left: 20px;
 	}
 }
 @media (min-width: 768px) {
 	.timeline li {
 		& .title {
-			width: 35%;
+			width: 200px;
+			left: 0;
+			height: fit-content;
 		}
 
 		& .description {
 			margin-left: 35%;
+			margin-top: 0;
 		}
 	}
 }
@@ -100,7 +98,10 @@
 
 		& .title {
 			width: 300px;
-			margin-left: 110%;
+			/* margin-left: 110%; */
+			/* margin-left: 575px; */
+			margin-right: -350px;
+			margin-left: auto;
 			align-items: flex-start;
 
 			&::after {
@@ -110,8 +111,8 @@
 				background-color: var(--neutral-dark);
 				position: absolute;
 				top: calc(30% - 2px);
-				right: 320px;
-				/* left: -75px; */
+				/* right: 320px; */
+				left: -75px;
 			}
 		}
 
@@ -131,6 +132,7 @@
 
 			&::after {
 				right: -75px;
+				left: auto;
 				/* left: 0 !important; */
 			}
 		}

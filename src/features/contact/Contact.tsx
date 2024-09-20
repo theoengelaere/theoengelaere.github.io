@@ -48,29 +48,25 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 								<div className="coord">
 									<h3>Ou à me contacter</h3>
 									<div className="coord-item">
-										<span>
-											Par email:
-											<a href="mailto:theo.engelaere.etu@univ-lille.fr">
-												theo.engelaere.etu@univ-lille.fr
-											</a>
-										</span>
+										<span>Par email:</span>
+										<a href="mailto:theo.engelaere.etu@univ-lille.fr">
+											theo.engelaere.etu@univ-lille.fr
+										</a>
 									</div>
 									<div className="coord-item">
-										<span>
-											Via LinkedIn:
-											<a
-												href="#"
-												onClick={e => {
-													e.preventDefault();
-													window.open(
-														'https://www.linkedin.com/in/theo-engelaere',
-														'_blank'
-													);
-												}}
-											>
-												theo-engelaere
-											</a>
-										</span>
+										<span>Via LinkedIn:</span>
+										<a
+											href="#"
+											onClick={e => {
+												e.preventDefault();
+												window.open(
+													'https://www.linkedin.com/in/theo-engelaere',
+													'_blank'
+												);
+											}}
+										>
+											theo-engelaere
+										</a>
 									</div>
 								</div>
 							</div>

@@ -4,10 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import '../css/navigationBar.css';
 
 type Section = {
-	// route: string;
 	label: string;
 	link: string;
-	// mainElement: ReactElement;
 };
 
 const NavigationBar = ({
@@ -26,7 +24,6 @@ const NavigationBar = ({
 			setScrolled(window.scrollY > 50);
 
 			const scrollPosition = window.scrollY + window.innerHeight / 2;
-			// console.log(sectionRefs);
 			sections.forEach(({ link }, index) => {
 				const sectionRef = sectionRefs.current[index];
 
@@ -48,11 +45,6 @@ const NavigationBar = ({
 
 		return () => window.removeEventListener('scroll', onScroll);
 	}, [sections, sectionRefs]);
-
-	useEffect(() => {
-		console.log(activeLink);
-		return () => {};
-	}, [activeLink]);
 
 	return (
 		<Router>
