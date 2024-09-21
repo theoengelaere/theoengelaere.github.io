@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import {
+	ArrowDown,
 	// ArrowDown,
 	Envelope,
 	FileEarmarkArrowDown,
@@ -86,6 +87,12 @@ export default function Home() {
 						</div>
 					</Row>
 				</Container>
+				<div className="next">
+					<span>A propos de moi</span>
+					<a href="#aPropos">
+						<ArrowDown />
+					</a>
+				</div>
 				<div className="overlay">
 					<FlowField height={homeHeight} />
 				</div>

@@ -16,7 +16,7 @@ import { useRef, useEffect } from 'react';
 // ];
 
 const sections: Section[] = [
-	{ link: 'about', label: 'A Propos' },
+	{ link: 'aPropos', label: 'A Propos' },
 	{ link: 'competences', label: 'Compétences' },
 	{ link: 'projets', label: 'Projets' },
 	{ link: 'parcours', label: 'Parcours' },

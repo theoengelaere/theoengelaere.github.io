@@ -2,6 +2,10 @@
 
 .home {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .home canvas {
@@ -17,11 +21,10 @@
 }
 
 .home .container {
-	width: fit-content;
 	/* background-color: rgba(174, 202, 225, 0.6); */
-	background-color: rgba(246, 239, 229, 0.6);
+	background-color: rgba(246, 239, 229, 0.2);
 	/* background-color: rgba(67, 96, 109, 0.6); */
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(5px);
 	display: flex;
 	flex-direction: column;
 }
@@ -103,7 +106,7 @@
 	height: 100%;
 	position: absolute;
 	/* background-color: #fff; */
-	background-color: #bbb;
+	background-color: rgba(0, 0, 0, 0.25);
 	left: 0;
 	top: 0;
 	transition: 0.3s ease-in-out;
@@ -160,6 +163,33 @@
 	/* top: -50%; */
 }
 
+.home .next {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/* gap: 1rem; */
+	backdrop-filter: blur(5px);
+	padding: 1rem;
+
+	& a {
+		width: 2.5rem;
+		height: 2.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	& a > * {
+		stroke: black;
+		transform: scale(2);
+	}
+}
+
 /* .home .next button::before {
 	content: '';
 	width: 100%;
@@ -183,8 +213,9 @@
 
 @media (min-width: 0px) {
 	.home {
-		height: fit-content;
-		max-height: 100vh;
+		/* height: fit-content; */
+		height: 100vh;
+		max-height: fit-content;
 	}
 	.home h1 {
 		font-size: 2rem;
@@ -205,7 +236,7 @@
 @media (min-width: 768px) {
 	.home {
 		height: 100vh;
-		max-height: 100vh;
+		max-height: fit-content;
 	}
 	.home .container {
 		gap: 2rem;
@@ -220,6 +251,6 @@
 		font-size: 2.25rem;
 	}
 	.home .next span {
-		font-size: 2rem;
+		font-size: 1.8em;
 	}
 }

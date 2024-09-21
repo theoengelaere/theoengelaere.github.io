@@ -9,7 +9,9 @@ export default function FlowField({ height }: { height: number }) {
 
 	const angleFunction: AngleFunction = (x, y, zoom, curve) => {
 		// return Math.cos(x * zoom) + Math.sin(y * zoom) * curve;
-		return Math.cos(x * zoom * 0.5) + Math.sin(y * zoom * 0.5) * curve;
+		// return Math.cos(x * zoom * 0.5) + Math.sin(y * zoom * 0.5) * curve;
+
+		return Math.cos((x * zoom) / 1.5) + (Math.sin(y * zoom) * curve) / 2;
 	};
 
 	useEffect(() => {
@@ -31,7 +33,7 @@ export default function FlowField({ height }: { height: number }) {
 				angleFunction,
 				canvasRef.current.width,
 				canvasRef.current.height,
-				1000,
+				canvasRef.current.width,
 				{ r: 1.3, g: 0.8, b: 0.6 }
 				// { r: 1, g: 1.5, b: 2 }
 			)

@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 
 const About = forwardRef<HTMLDivElement>((_, ref) => {
 	return (
-		<section className="banner about" id="about" ref={ref}>
+		<section className="banner about" id="aPropos" ref={ref}>
 			<Container>
 				<Row className="section-title">
 					<h1>A propos de moi</h1>
