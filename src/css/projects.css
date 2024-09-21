@@ -5,9 +5,9 @@
 .projects .project-card {
 	padding: 4px;
 	background-color: transparent;
-	position: relative;
+	/* position: relative; */
 	border: none;
-	display: flex;
+	/* display: flex; */
 }
 
 /* .projects .project-card::before {
@@ -187,36 +187,15 @@
 @media (min-width: 768px) {
 }
 
-/* .skills .card {
-	background-color: rgb(67, 67, 145);
-	box-sizing: border-box;
-	padding: 20px 30px;
-	flex-shrink: 0;
-	width: 300px;
-	border-radius: 14px;
-	text-align: center;
-	scroll-snap-align: center;
-}
-
-.skills .wrapper {
-	background-color: red;
-	display: flex;
-	overflow-x: scroll;
-	gap: 20px;
-	width: 300px;
-	scroll-snap-type: x mandatory;
-} */
-
 @media (max-width: 992px) {
 	.projects {
 		& .cards-container {
-			width: 100%;
+			justify-content: left;
+			gap: 0.5rem;
 			margin-left: auto;
 			flex-wrap: nowrap;
-			overflow: scroll;
-			/* background-color: red; */
+			overflow-x: scroll;
 			scroll-snap-type: x mandatory;
-			/* width: 300px; */
 		}
 
 		& .project-card {
@@ -224,10 +203,24 @@
 			scroll-snap-align: center;
 		}
 	}
-}
 
-@media (min-width: 1200px) {
-}
+	.projects .card-content {
+		width: 280px;
+		height: 280px;
 
-@media (min-width: 1400px) {
+		& .card-heading {
+			gap: 1rem;
+			width: 100%;
+
+			& h3 {
+				font-size: 1.25rem;
+				margin: 0;
+			}
+		}
+
+		& img {
+			max-height: 150px;
+			max-width: 240px;
+		}
+	}
 }
