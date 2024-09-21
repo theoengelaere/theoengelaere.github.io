@@ -117,7 +117,6 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 								nextVisibleCards={1}
 								wrapperHeight="200px"
 								cardsWidth="200px"
-								enableManualMode={false}
 							/>
 						</div>
 						{/* )} */}

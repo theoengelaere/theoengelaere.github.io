@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import { X } from 'react-bootstrap-icons';
-import '../../css/imageOverlay.css';
+// import '../../css/imageOverlay.css';
 export default function ImageOverlay({
 	srcPath,
 	onClick,

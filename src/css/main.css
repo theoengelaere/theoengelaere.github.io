@@ -75,6 +75,11 @@
 * {
 	margin: 0;
 	padding: 0;
+}
+
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
@@ -168,7 +173,7 @@ select:focus {
 	/* p, label, textarea{
 		font-size: 1rem;
 	} */
-	h2{
+	h2 {
 		/* font-size: 1.4rem !important; */
 	}
 }
@@ -178,7 +183,9 @@ select:focus {
 		width: 85% !important;
 		max-width: 85% !important;
 	}
-	p, label, textarea{
+	p,
+	label,
+	textarea {
 		font-size: 1.1rem;
 	}
 }
@@ -201,7 +208,9 @@ select:focus {
 	section .container {
 		max-width: 90% !important;
 	}
-	p, label, textarea{
+	p,
+	label,
+	textarea {
 		font-size: 1.2rem;
 	}
 }

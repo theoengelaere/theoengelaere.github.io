@@ -153,6 +153,7 @@
 	right: 2rem;
 	width: 2rem;
 	height: 3rem;
+	z-index: -1;
 
 	& svg {
 		width: 100%;

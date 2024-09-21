@@ -2,9 +2,8 @@ import { type CSSProperties, useEffect, useRef, useState } from 'react';
 import useMousePosition from '../tools/useMousePosition';
 import { X } from 'react-bootstrap-icons';
 import decodeHTML from '../tools/decodeHTML';
-import Slider from '../../decorators/Slider';
 import { Container, Row } from 'react-bootstrap';
-import ImageOverlay from './ImageOverlay';
+import ImageSlider from '../../decorators/ImageSlider';
 
 type ProjectCardProps = {
 	title: string;
@@ -31,17 +30,16 @@ export default function ProjectCard({ props }: { props: ProjectCardProps }) {
 	});
 	const ref = useRef(null);
 	const [overlayVisibility, setOverlayVisibility] = useState<boolean>(false);
-	const [enableAutoSlider, setEnableAutoSlider] = useState<boolean>(true);
-	const images = imagesPaths.map((path, i) => (
-		// <img src={path} alt="IMAGE" key={i} />
-		<ImageOverlay
-			srcPath={path}
-			key={i}
-			onClick={() => {
-				setEnableAutoSlider(false);
-			}}
-		/>
-	));
+	// const [enableAutoSlider, setEnableAutoSlider] = useState<boolean>(true);
+	// const images = imagesPaths.map((path, i) => (
+	// 	<ImageOverlay
+	// 		srcPath={path}
+	// 		key={i}
+	// 		onClick={() => {
+	// 			setEnableAutoSlider(false);
+	// 		}}
+	// 	/>
+	// ));
 
 	useEffect(() => {
 		const rect = ref.current.getBoundingClientRect();
@@ -54,7 +52,7 @@ export default function ProjectCard({ props }: { props: ProjectCardProps }) {
 
 	const closeOverlay = () => {
 		setOverlayVisibility(false);
-		setEnableAutoSlider(true);
+		// setEnableAutoSlider(true);
 	};
 
 	return (
@@ -79,14 +77,7 @@ export default function ProjectCard({ props }: { props: ProjectCardProps }) {
 				</div>
 			</div>
 			{overlayVisibility && (
-				<div
-					className="card-overlay"
-					onClick={closeOverlay}
-					// style={{
-					// visibility: overlayVisibility ? 'visible' : 'hidden',
-					// opacity: overlayVisibility ? 1 : 0,
-					// }}
-				>
+				<div className="card-overlay" onClick={closeOverlay}>
 					<Container className="card-overlay-content-container">
 						<Row>
 							<div
@@ -100,14 +91,7 @@ export default function ProjectCard({ props }: { props: ProjectCardProps }) {
 									<X />
 								</button>
 								<h1>{title}</h1>
-								<Slider
-									cards={images}
-									firstCardIdx={0}
-									nextVisibleCards={1}
-									cardsWidth="400px"
-									wrapperHeight="400px"
-									enableAutoMode={enableAutoSlider}
-								/>
+								<ImageSlider imageUrls={imagesPaths} />
 								<p>{decodeHTML(description)}</p>
 							</div>
 						</Row>

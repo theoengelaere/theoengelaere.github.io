@@ -69,7 +69,7 @@ export default function Slider({
 			for (let i = active + 1; i < elRefs.current.length; i++) {
 				stt++;
 				const card: HTMLElement = elRefs.current[i];
-				card.style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+				card.style.transform = `translateX(${110 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-4deg)`;
 				card.style.zIndex = `${-stt}`;
 				card.style.filter = 'blur(5px)';
 				card.style.opacity = stt > nextVisibleCards ? '0' : '0.3';
@@ -79,7 +79,7 @@ export default function Slider({
 			for (let i = active - 1; i >= 0; i--) {
 				stt++;
 				const card: HTMLElement = elRefs.current[i];
-				card.style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+				card.style.transform = `translateX(${-110 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(4deg)`;
 				card.style.zIndex = `${-stt}`;
 				card.style.filter = 'blur(5px)';
 				card.style.opacity = stt > nextVisibleCards ? '0' : '0.3';

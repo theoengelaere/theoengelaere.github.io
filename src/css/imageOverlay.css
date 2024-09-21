@@ -1,7 +1,9 @@
 .image-overlay-container {
-	background-color: red;
-	/* display: none; */
-	z-index: -1;
+	/* z-index: 16; */
+
+	& img.zoomable {
+		cursor: zoom-in !important;
+	}
 }
 .image-overlay-outer {
 	position: fixed;
@@ -11,34 +13,21 @@
 	left: 0;
 	background: rgba(0, 0, 0, 0.5);
 	z-index: 999;
-	/* opacity: 0; */
-	/* visibility: hidden; */
 	transition: all ease 0.3s;
 }
 
 .image-overlay-inner {
-	/* text-align: center; */
 	position: relative;
-	/* z-index: 999; */
-	/* max-width: 80%;
-	max-height: 80%; */
 	top: 50%;
 	transform: translateY(-50%);
-	/* overflow-y: scroll; */
 
 	& img.image-full-screen {
 		z-index: 999;
-		/* max-width: 80%; */
-		/* max-height: 80%; */
-		/* display: none; */
 		width: 90%;
 		height: auto;
 		max-width: 90vmin;
-		/* max-height: 100vmin; */
 		max-height: auto;
+		display: block;
+		margin: auto;
 	}
-}
-
-img.zoomable {
-	/* cursor: -moz-zoom-in; */
 }
