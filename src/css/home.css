@@ -178,15 +178,21 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: 0.3s ease-in-out;
+		border-radius: 15px;
+
+		& svg {
+			stroke: black;
+			transform: scale(2);
+		}
 
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.25);
-		}
-	}
+			background-color: rgba(0, 0, 0, 0.35);
 
-	& a > * {
-		stroke: black;
-		transform: scale(2);
+			& svg {
+				filter: invert(1);
+			}
+		}
 	}
 }
 

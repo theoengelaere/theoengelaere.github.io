@@ -151,10 +151,6 @@ select:focus {
 	/* background-color: red; */
 }
 
-.section-title {
-	margin-bottom: 4rem;
-}
-
 .card {
 	border: none !important;
 }
@@ -201,6 +197,9 @@ select:focus {
 	.features .container {
 		padding: 80px 40px;
 		max-width: 100%;
+	}
+	.section-title {
+		margin-bottom: 1rem;
 	}
 }
 

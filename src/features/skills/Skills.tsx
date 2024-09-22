@@ -19,7 +19,7 @@ import junit from '../../assets/img/logos/junit5-logo.png';
 import maven from '../../assets/img/logos/maven_logo.svg';
 import mvc from '../../assets/img/logos/MVC-design-pattern.png';
 import openlayers from '../../assets/img/logos/OpenLayers_logo.svg.png';
-import swaggerui from '../../assets/img/logos/swagger_ui_logo_no_text.png';
+// import swaggerui from '../../assets/img/logos/swagger_ui_logo_no_text.png';
 import tanstack from '../../assets/img/logos/tanstack_logo.png';
 import nodejs from '../../assets/img/logos/Node.js_logo.png';
 
@@ -43,7 +43,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 		{
 			title: 'Développement web back-end',
 			description:
-				"&emsp; Je suis à l'aise en développement web back-end et maîtrise la création d'API REST sécurisées en Java EE, en utilisant Tomcat comme serveur et PostgreSQL pour la base de données. J'ai également une expérience dans le développement d'API avec Express.js et MySQL, et dans l'utilisation de Docker et Docker Compose pour la gestions des conteneurs hébergeant les bases de données. En Java, je suis capable de gérer les sessions utilisateur, les cookies, d'appliquer des filtres et d'exploiter le contexte des servlets. De plus, je sais intégrer divers outils comme Carbone pour la génération de documents ou Nodemailer pour l'envoir d'emails",
+				"&emsp; Je suis à l'aise en développement web back-end et maîtrise la création de site web et d'API REST sécurisées en Java EE, en utilisant Tomcat comme serveur et PostgreSQL pour la base de données. Je suis également à l'aise dans le développement d'API avec Express.js et MySQL, et dans l'utilisation de Docker et Docker Compose pour la gestions des conteneurs hébergeant les bases de données. De plus, je sais intégrer divers outils comme Carbone pour la génération de documents ou Nodemailer pour l'envoir d'emails",
 			cards: [
 				{ title: '', imgLink: jakarta },
 				{ title: 'PostgreSQL', imgLink: postgres },
@@ -56,7 +56,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 		{
 			title: 'Développement web front-end',
 			description:
-				"&emsp; Côté front-end, je suis capable de développer des interfaces complexes et dynamiques avec React. Je maîtrise plusieurs bibliothèques essentielles comme TanStack Table pour créer des tables HTML interactives, D3.js pour des visualisations graphiques avancées ou OpenLayers pour l'intégration de cartes interactives. En matière de style, je suis à l'aise en CSS et utilise Bootstrap, ce qui me permet de concevoir des interfaces esthétiques et entièrement responsives.",
+				"&emsp; Côté front-end, je suis capable de développer des interfaces complexes et dynamiques avec React. Je maîtrise plusieurs bibliothèques essentielles comme TanStack Table pour créer des tables HTML interactives, D3.js pour des visualisations graphiques avancées ou OpenLayers pour l'intégration de cartes interactives. En matière de style, je suis à l'aise en CSS et utilise Bootstrap pour concevoir des interfaces esthétiques et responsives.",
 			cards: [
 				{ title: '', imgLink: nodejs },
 				{ title: 'Javascript', imgLink: javascript },
@@ -66,7 +66,6 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 				{ title: 'CSS', imgLink: csslogo },
 				{ title: 'D3.js', imgLink: d3logo },
 				{ title: 'OpenLayers', imgLink: openlayers },
-				{ title: 'Swagger UI', imgLink: swaggerui },
 			],
 		},
 		{
@@ -119,7 +118,6 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 								cardsWidth="200px"
 							/>
 						</div>
-						{/* )} */}
 					</Row>
 				))}
 			</Container>

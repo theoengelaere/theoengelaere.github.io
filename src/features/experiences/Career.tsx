@@ -21,16 +21,17 @@ const Career = forwardRef<HTMLDivElement>((_, ref) => {
 								</div>
 								<div className="description">
 									<p>
-										&emsp; J'ai réaliser un stage de 3 mois à l'IUT, dans le
-										cadre de mes études. La mission qui m'a était attribuée
-										consistait à réaliser une refonte complète d'un vieux site
-										développé en PHP. L'objectif était de séparer le back-end du
-										front-end en développant une API REST avec Express.js et une
-										application en React. Ce stage a été l'occasion de surmonter
-										de nombreux défis techniques, d'enrichir mes compétences et
-										de découvrir des technologies. J'ai su mené à bien cette
-										mission, et cette première expérience professionnelle m'a
-										permis d'acroître ma confiance en mes capacités.
+										&emsp; J'ai réalisé un stage de 3 mois à l'IUT, dans le
+										cadre de ma deuxième année d'études. La mission qui m'a
+										était attribuée consistait à réaliser une refonte complète
+										d'un vieux site développé en PHP. L'objectif était de
+										séparer le back-end du front-end en développant une API REST
+										avec Express.js et une application en React. Ce stage a été
+										l'occasion de surmonter de nombreux défis techniques,
+										d'enrichir mes compétences et de découvrir des technologies.
+										J'ai su mené à bien cette mission, et cette première
+										expérience professionnelle m'a permis d'acroître ma
+										confiance en mes capacités.
 									</p>
 								</div>
 							</li>
