@@ -182,9 +182,6 @@ select:focus {
 	textarea {
 		font-size: 1rem;
 	}
-	.home * {
-		display: none;
-	}
 }
 @media (min-width: 768px) {
 	.features section:first-of-type {
