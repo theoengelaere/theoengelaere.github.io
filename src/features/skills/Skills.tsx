@@ -43,10 +43,11 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 		{
 			title: 'Développement web back-end',
 			description:
-				"&emsp; Je suis à l'aise en développement web back-end et maîtrise la création de site web et d'API REST sécurisées en Java EE, en utilisant Tomcat comme serveur et PostgreSQL pour la base de données. Je suis également à l'aise dans le développement d'API avec Express.js et MySQL, et dans l'utilisation de Docker et Docker Compose pour la gestions des conteneurs hébergeant les bases de données. De plus, je sais intégrer divers outils comme Carbone pour la génération de documents ou Nodemailer pour l'envoir d'emails",
+				"&emsp; Je suis à l'aise en développement web back-end et maîtrise la création de site web et d'API REST sécurisées en Java EE, en utilisant Maven pour gérer les dépendances et le déploiement, Tomcat comme serveur, ainsi que PostgreSQL pour la base de données. Je suis également à l'aise dans le développement d'API avec Express.js et MySQL, et dans l'utilisation de Docker et Docker Compose pour la gestions des conteneurs hébergeant les bases de données. De plus, je sais intégrer divers outils comme Carbone pour la génération de documents ou Nodemailer pour l'envoi d'emails",
 			cards: [
 				{ title: '', imgLink: jakarta },
 				{ title: 'PostgreSQL', imgLink: postgres },
+				{ title: 'Maven', imgLink: maven },
 				{ title: 'Docker', imgLink: dockerlogo },
 				{ title: 'Tomcat', imgLink: tomcat },
 				{ title: '', imgLink: nodejs },
@@ -71,7 +72,7 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 		{
 			title: "Développement d'applications",
 			description:
-				"&emsp; Je sais développer des applications en Java, en utilisant JavaFX pour l'interface graphique. Je mâitrise l'architecture MVC (Modèle-Vue-Contrôleur) qui permet une séparation claire des responsabilités. De plus, ma formation à l'IUT m'a appris la pratique du Test-Driven Development (TDD) pour assurer une qualité de code optimale, et l'utilisation de JUnit et Maven pour réaliser le test-coverage et gérer les dépendances du projet.",
+				"&emsp; Je sais développer des applications en Java, en utilisant JavaFX pour l'interface graphique. Je mâitrise l'architecture MVC (Modèle-Vue-Contrôleur) qui permet une séparation claire des responsabilités. De plus, ma formation à l'IUT m'a appris la pratique du Test-Driven Development (TDD) pour assurer la qualité du code, et l'utilisation de JUnit 5 et Maven pour réaliser le test-coverage et gérer les dépendances du projet.",
 			cards: [
 				{ title: 'Java', imgLink: javalogo },
 				{ title: '', imgLink: javafxlogo },

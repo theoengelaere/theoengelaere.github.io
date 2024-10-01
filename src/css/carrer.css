@@ -47,19 +47,24 @@
 @media (min-width: 0px) {
 	.timeline li {
 		& .title {
-			width: 90%;
+			width: 100%;
 			right: 0;
 			height: 50px;
 		}
 		& .description {
-			margin-left: 10px;
+			/* margin-left: 10px; */
 			margin-top: 60px;
 		}
 	}
 }
 @media (min-width: 576px) {
-	.timeline li .description{
-		margin-left: 20px;
+	.timeline li .description {
+		/* margin-left: 20px; */
+	}
+}
+@media (max-width: 768px) {
+	.timeline::before {
+		display: none;
 	}
 }
 @media (min-width: 768px) {
