@@ -46,3 +46,10 @@
 	width: 2rem;
 	height: 2rem;
 }
+
+@media (max-width: 576px) {
+	.img-slider-btn > * {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
