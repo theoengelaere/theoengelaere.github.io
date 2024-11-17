@@ -24,7 +24,7 @@
 	/* background-color: rgba(174, 202, 225, 0.6); */
 	background-color: rgba(246, 239, 229, 0.2);
 	/* background-color: rgba(67, 96, 109, 0.6); */
-	backdrop-filter: blur(5px);
+	/* backdrop-filter: blur(5px); */
 	display: flex;
 	flex-direction: column;
 }
@@ -33,6 +33,8 @@
 .home h3 {
 	text-align: center;
 	position: relative;
+	backdrop-filter: blur(3px);
+	padding: 0.5rem;
 }
 
 .home h1 {
@@ -76,6 +78,7 @@
 	width: fit-content;
 	height: 3rem;
 	gap: 0.5rem;
+	backdrop-filter: blur(15px);
 }
 
 .home-buttons button img {
@@ -169,18 +172,27 @@
 	justify-content: space-between;
 	align-items: center;
 	/* gap: 1rem; */
-	backdrop-filter: blur(5px);
+	/* backdrop-filter: blur(5px); */
 	padding: 1rem;
 
+	& a,
+	span {
+		backdrop-filter: blur(2px);
+	}
+
 	& a {
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 3rem;
+		height: 3rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		border: 1px solid rgb(154, 154, 154);
+		border-radius: 100%;
+		transition: 0.3s;
+		/* padding: 12px; */
 
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.25);
+			background-color: rgba(0, 0, 0, 0.2);
 		}
 	}
 
@@ -212,16 +224,15 @@
 } */
 
 @media (min-width: 0px) {
-	.home {
-		/* height: fit-content; */
-		height: 100vh;
-		max-height: fit-content;
+	.home .next {
+		display: none;
 	}
 	.home h1 {
 		font-size: 2rem;
 	}
 	.home .container {
 		gap: 1rem;
+		width: fit-content;
 	}
 	.home .home-buttons {
 		flex-direction: column;
@@ -235,8 +246,8 @@
 }
 @media (min-width: 768px) {
 	.home {
-		height: 100vh;
-		max-height: fit-content;
+		/* height: 1000px; */
+		/* max-height: fit-content; */
 	}
 	.home .container {
 		gap: 2rem;
@@ -247,6 +258,12 @@
 	}
 }
 @media (min-width: 992px) {
+	.home {
+		height: 100vh;
+	}
+	.home .next {
+		display: flex;
+	}
 	.home h1 {
 		font-size: 2.25rem;
 	}

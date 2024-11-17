@@ -124,6 +124,7 @@ label {
 
 p {
 	text-align: justify;
+	/* font-size: 1rem; */
 }
 
 button span {
@@ -180,7 +181,7 @@ select:focus {
 @media (min-width: 576px) {
 	.features .container {
 		padding: 30px 30px;
-		width: 85% !important;
+		/* width: 85% !important; */
 		max-width: 85% !important;
 	}
 	p,
