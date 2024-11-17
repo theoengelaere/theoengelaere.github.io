@@ -57,10 +57,10 @@
 	font-family: Spa; */
 }
 .slider #prev {
-	left: 10%;
+	left: 20%;
 }
 .slider #next {
-	right: 10%;
+	right: 20%;
 }
 
 .slider .card img {

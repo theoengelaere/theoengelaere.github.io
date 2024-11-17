@@ -115,7 +115,8 @@ h3 {
 
 p,
 span,
-label {
+label,
+textarea {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -152,10 +153,6 @@ select:focus {
 	/* background-color: red; */
 }
 
-.section-title {
-	margin-bottom: 4rem;
-}
-
 .card {
 	border: none !important;
 }
@@ -171,11 +168,8 @@ select:focus {
 	.features .container {
 		padding: 30px 20px;
 	}
-	/* p, label, textarea{
-		font-size: 1rem;
-	} */
-	h2 {
-		/* font-size: 1.4rem !important; */
+	.section-title {
+		margin-bottom: 0.5rem;
 	}
 }
 @media (min-width: 576px) {
@@ -187,7 +181,7 @@ select:focus {
 	p,
 	label,
 	textarea {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 }
 @media (min-width: 768px) {
@@ -202,6 +196,14 @@ select:focus {
 	.features .container {
 		padding: 80px 40px;
 		max-width: 100%;
+	}
+	.section-title {
+		margin-bottom: 1rem;
+	}
+	p,
+	label,
+	textarea {
+		font-size: 1.1rem;
 	}
 }
 
