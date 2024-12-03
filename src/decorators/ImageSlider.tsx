@@ -26,10 +26,7 @@ export default function ImageSlider({ imageUrls }: ImageSliderProps) {
 	};
 
 	return (
-		<div
-			style={{ width: '100%', height: '100%', position: 'relative' }}
-			className="image-overlay-container"
-		>
+		<div style={{ position: 'relative' }} className="image-overlay-container">
 			<img
 				src={imageUrls[imageIndex]}
 				alt="IMAGE"

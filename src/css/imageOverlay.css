@@ -23,11 +23,14 @@
 
 	& img.image-full-screen {
 		z-index: 999;
-		width: 90%;
-		height: auto;
-		max-width: 90vmin;
-		max-height: auto;
+		max-height: 96vh;
 		display: block;
 		margin: auto;
+		cursor: zoom-out;
 	}
+}
+
+.img-slider-img {
+	max-width: 80vh;
+	max-height: 80vh;
 }

@@ -2,7 +2,7 @@ import { Container, Row } from 'react-bootstrap';
 import '../../css/skills.css';
 import { forwardRef } from 'react';
 
-import javascript from '../../assets/img/logos/JavaScript-logo.png';
+// import javascript from '../../assets/img/logos/JavaScript-logo.png';
 import jakarta from '../../assets/img/logos/Jakarta_logo.png';
 import reactLogo from '../../assets/img/logos/react_logo.png';
 import postgres from '../../assets/img/logos/PostgreSQL_logo.3colors.540x557.png';
@@ -42,14 +42,14 @@ type SkillProps = {
 };
 
 const Skills = forwardRef<HTMLDivElement>((_, ref) => {
-	const oldwebback =
-		"&emsp; Je suis à l'aise en développement web back-end et maîtrise la création de site web et d'API REST sécurisées en Java EE, en utilisant Maven pour gérer les dépendances et le déploiement, Tomcat comme serveur, ainsi que PostgreSQL pour la base de données. Je suis également à l'aise dans le développement d'API avec Express.js et MySQL, et dans l'utilisation de Docker et Docker Compose pour la gestions des conteneurs hébergeant les bases de données. De plus, je sais intégrer divers outils comme Carbone pour la génération de documents ou Nodemailer pour l'envoi d'emails";
+	// const oldwebback =
+	// 	"&emsp; Je suis à l'aise en développement web back-end et maîtrise la création de site web et d'API REST sécurisées en Java EE, en utilisant Maven pour gérer les dépendances et le déploiement, Tomcat comme serveur, ainsi que PostgreSQL pour la base de données. Je suis également à l'aise dans le développement d'API avec Express.js et MySQL, et dans l'utilisation de Docker et Docker Compose pour la gestions des conteneurs hébergeant les bases de données. De plus, je sais intégrer divers outils comme Carbone pour la génération de documents ou Nodemailer pour l'envoi d'emails";
 
-	const oldwebfront =
-		"&emsp; Côté front-end, je suis capable de développer des interfaces complexes et dynamiques avec React. Je maîtrise plusieurs bibliothèques essentielles comme TanStack Table pour créer des tables HTML interactives, D3.js pour des visualisations graphiques avancées ou OpenLayers pour l'intégration de cartes interactives. En matière de style, je suis à l'aise en CSS et utilise Bootstrap pour concevoir des interfaces esthétiques et responsives.";
+	// const oldwebfront =
+	// 	"&emsp; Côté front-end, je suis capable de développer des interfaces complexes et dynamiques avec React. Je maîtrise plusieurs bibliothèques essentielles comme TanStack Table pour créer des tables HTML interactives, D3.js pour des visualisations graphiques avancées ou OpenLayers pour l'intégration de cartes interactives. En matière de style, je suis à l'aise en CSS et utilise Bootstrap pour concevoir des interfaces esthétiques et responsives.";
 
-	const olddevapp =
-		"&emsp; Je sais développer des applications en Java, en utilisant JavaFX pour l'interface graphique. Je mâitrise l'architecture MVC (Modèle-Vue-Contrôleur) qui permet une séparation claire des responsabilités. De plus, ma formation à l'IUT m'a appris la pratique du Test-Driven Development (TDD) pour assurer la qualité du code, et l'utilisation de JUnit 5 et Maven pour réaliser le test-coverage et gérer les dépendances du projet.";
+	// const olddevapp =
+	// 	"&emsp; Je sais développer des applications en Java, en utilisant JavaFX pour l'interface graphique. Je mâitrise l'architecture MVC (Modèle-Vue-Contrôleur) qui permet une séparation claire des responsabilités. De plus, ma formation à l'IUT m'a appris la pratique du Test-Driven Development (TDD) pour assurer la qualité du code, et l'utilisation de JUnit 5 et Maven pour réaliser le test-coverage et gérer les dépendances du projet.";
 
 	const mySkills: SkillProps[] = [
 		{
