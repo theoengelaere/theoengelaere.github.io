@@ -7,6 +7,7 @@ import About from './features/about/About';
 import Skills from './features/skills/Skills';
 import Carrer from './features/experiences/Career';
 import { useRef, useEffect } from 'react';
+import Skill2 from './features/skills/Skill2';
 
 // const sections: Section[] = [
 // 	{ route: '/', label: 'A Propos', mainElement: <Home /> },
@@ -34,7 +35,8 @@ function App() {
 			<Container className="features">
 				<Home />
 				<About ref={el => (sectionRefs.current[0] = el!)} />
-				<Skills ref={el => (sectionRefs.current[1] = el!)} />
+				{/* <Skills ref={el => (sectionRefs.current[1] = el!)} /> */}
+				<Skill2 />
 				<Projects ref={el => (sectionRefs.current[2] = el!)} />
 				<Carrer ref={el => (sectionRefs.current[3] = el!)} />
 				<Contact ref={el => (sectionRefs.current[4] = el!)} />
