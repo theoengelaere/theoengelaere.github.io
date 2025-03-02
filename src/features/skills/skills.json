@@ -1,0 +1,44 @@
+[
+	{
+		"title": "Développement, langages et technologies",
+		"list": [
+			"Java",
+			"JEE",
+			"Spring",
+			"JUnit 5",
+			"JavaFX",
+			"JavaScript",
+			"TypeScript",
+			"Node.js",
+			"React",
+			"Express.js",
+			"Electron",
+			"Socket.io",
+			"CSS",
+			"C",
+			"C#",
+			"Kotlin",
+			"Bruno",
+			"PostgreSQL",
+			"MySQL",
+			" H2",
+			"MongoDB"
+		]
+	},
+	{
+		"title": "Outils et Environnements",
+		"list": [
+			"Git",
+			"GitHub",
+			"GitLab",
+			"Maven",
+			"Docker",
+			"Tomcat",
+			"GitLab-CI",
+			"IntelliJ IDEA",
+			"VSCode",
+			"Debian",
+			"Windows"
+		]
+	}
+]
