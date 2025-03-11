@@ -17,7 +17,10 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 						<h1>Mes compétences</h1>
 					</div>
 				</Row>
-				<Row className="align-items-end justify-content-center pb-0 gap-2 skills-nav">
+				<Row
+					className="align-items-end justify-content-center pb-0 gap-2 skills-nav"
+					style={{ height: '90px' }}
+				>
 					{skills.map(s => (
 						<div
 							className={`col py-1 skills-nav-item ${skillList.title == s.title ? 'active' : ''}`}
@@ -30,7 +33,6 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
 								style={{
 									textDecoration: 'inherit',
 									color: 'inherit',
-									height: '100%',
 								}}
 								onClick={e => e.preventDefault()}
 							>

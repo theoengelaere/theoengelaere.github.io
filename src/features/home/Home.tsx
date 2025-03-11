@@ -17,8 +17,8 @@ export default function Home() {
 
 	function downloadCV() {
 		const link = document.createElement('a');
-		link.href = '/CV_Theo_Engelaere_2024.pdf';
-		link.download = 'CV_Theo_Engelaere_2024.pdf';
+		link.href = '/CV_Theo_Engelaere_2025.pdf';
+		link.download = 'CV_Theo_Engelaere_2025.pdf';
 		link.target = '_blank';
 		link.click();
 	}
@@ -50,8 +50,8 @@ export default function Home() {
 					<Row>
 						<div className="col-12">
 							<h3>
-								Je suis à la recherche d'un stage en développement pour mars
-								2025
+								Je souhaite poursuivre mes études en master ou écoles
+								d'ingénieur
 							</h3>
 						</div>
 					</Row>
