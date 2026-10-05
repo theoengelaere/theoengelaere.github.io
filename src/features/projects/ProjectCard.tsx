@@ -1,9 +1,9 @@
 import { type CSSProperties, useEffect, useRef, useState } from 'react';
 import useMousePosition from '../tools/useMousePosition';
 import { X } from 'react-bootstrap-icons';
-import decodeHTML from '../tools/decodeHTML';
 import { Container, Row } from 'react-bootstrap';
 import ImageSlider from '../../decorators/ImageSlider';
+import content from '../../content/portfolio.json';
 
 type ProjectCardProps = {
 	title: string;
@@ -71,7 +71,7 @@ export default function ProjectCard({ props }: { props: ProjectCardProps }) {
 					<h3>{title}</h3>
 					<span>{year}</span>
 				</div>
-				<img src={thumbnailPath} alt="IMAGE" />
+				<img src={thumbnailPath} alt={title} />
 				<div className="description">
 					<span>{tags.join().replaceAll(',', ' | ')}</span>
 				</div>
@@ -87,12 +87,18 @@ export default function ProjectCard({ props }: { props: ProjectCardProps }) {
 								<button
 									className="close-card-overlay-button"
 									onClick={closeOverlay}
+									aria-label={content.projects.closeLabel}
 								>
 									<X />
 								</button>
 								<h1>{title}</h1>
-								<ImageSlider imageUrls={imagesPaths} />
-								<p>{decodeHTML(description)}</p>
+								<ImageSlider
+									imageUrls={imagesPaths}
+									alt={title}
+									previousLabel={content.projects.previousImageLabel}
+									nextLabel={content.projects.nextImageLabel}
+								/>
+								<p>{description}</p>
 							</div>
 						</Row>
 					</Container>

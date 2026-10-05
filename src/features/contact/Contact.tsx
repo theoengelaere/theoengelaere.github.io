@@ -5,9 +5,10 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { forwardRef } from 'react';
+import content from '../../content/portfolio.json';
 
 const Contact = forwardRef<HTMLDivElement>((_, ref) => {
-	const form = useRef();
+	const form = useRef<HTMLFormElement>(null);
 	const [sendStatus, setSendStatus] = useState<
 		'unsent' | 'sending' | 'sent' | 'error'
 	>('unsent');
@@ -41,31 +42,26 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 						<div className="col-lg-12 col-xl-6">
 							<div className="left">
 								<h2>
-									<span>Mon profil vous intéresse ?</span>
+									<span>{content.contact.titleLead}</span>
 									<br />
-									N'hésitez pas à me laisser un message
+									{content.contact.title}
 								</h2>
 								<div className="coord">
-									<h3>Ou à me contacter</h3>
+									<h3>{content.contact.alternativeTitle}</h3>
 									<div className="coord-item">
-										<span>Par email:</span>
-										<a href="mailto:theo.engelaere.etu@univ-lille.fr">
-											theo.engelaere.etu@univ-lille.fr
+										<span>{content.contact.emailLabel}</span>
+										<a href={`mailto:${content.contact.email}`}>
+											{content.contact.email}
 										</a>
 									</div>
 									<div className="coord-item">
-										<span>Via LinkedIn:</span>
+										<span>{content.contact.linkedinLabel}</span>
 										<a
-											href="#"
-											onClick={e => {
-												e.preventDefault();
-												window.open(
-													'https://www.linkedin.com/in/theo-engelaere',
-													'_blank'
-												);
-											}}
+											href={content.contact.linkedinUrl}
+											target="_blank"
+											rel="noreferrer"
 										>
-											theo-engelaere
+											{content.contact.linkedin}
 										</a>
 									</div>
 								</div>
@@ -77,7 +73,7 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 								<form ref={form} onSubmit={sendEmail}>
 									<div className="mb-3">
 										<label htmlFor="user_name" className="form-label">
-											Votre nom
+											{content.contact.form.nameLabel}
 										</label>
 										<input
 											type="text"
@@ -87,7 +83,7 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 									</div>
 									<div className="mb-3">
 										<label htmlFor="user_email" className="form-label">
-											Adresse e-mail
+											{content.contact.form.emailLabel}
 										</label>
 										<input
 											type="email"
@@ -97,18 +93,26 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 									</div>
 									<div className="mb-3">
 										<label htmlFor="message" className="form-label">
-											Message
+											{content.contact.form.messageLabel}
 										</label>
 										<textarea name="message" className="form-control" />
 									</div>
 									<button
 										type="submit"
 										className={`btn submit ${sendStatus} btn-primary`}
+										aria-live="polite"
+										aria-label={content.contact.form[sendStatus]}
 									>
-										{' '}
 										{sendStatus === 'sending' && (
-											<div className="loading-spinner"></div>
+											<>
+												<div className="loading-spinner"></div>
+												<span className="visually-hidden">
+													{content.contact.form.sending}
+												</span>
+											</>
 										)}
+										{sendStatus !== 'sending' &&
+											content.contact.form[sendStatus]}
 									</button>
 								</form>
 							</div>

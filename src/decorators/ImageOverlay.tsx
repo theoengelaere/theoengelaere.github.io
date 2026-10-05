@@ -3,9 +3,11 @@ import { useState } from 'react';
 // import '../../css/imageOverlay.css';
 export default function ImageOverlay({
 	srcPath,
+	alt,
 	onClick,
 }: {
 	srcPath: string;
+	alt: string;
 	onClick: (e: React.MouseEvent) => void;
 }) {
 	const [overlayVisibility, setOverlayVisibility] = useState<boolean>(false);
@@ -14,7 +16,7 @@ export default function ImageOverlay({
 		<div className="image-overlay-container">
 			<img
 				src={srcPath}
-				alt="IMAGE"
+				alt={alt}
 				className="image-preview zoomable"
 				onClick={e => {
 					// setOverlayVisibility(true);
@@ -37,7 +39,7 @@ export default function ImageOverlay({
 						>
 							<X />
 						</button> */}
-						<img src={srcPath} alt="IMAGE" className="image-full-screen" />
+						<img src={srcPath} alt={alt} className="image-full-screen" />
 					</div>
 				</div>
 			)}

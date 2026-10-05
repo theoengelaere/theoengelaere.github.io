@@ -1,6 +1,6 @@
 import { forwardRef, useState } from 'react';
 import { Card, CardBody, Container, Row } from 'react-bootstrap';
-import skills from './skills.json';
+import content from '../../content/portfolio.json';
 
 interface SkillList {
 	title: string;
@@ -8,20 +8,22 @@ interface SkillList {
 }
 
 const Skills = forwardRef<HTMLDivElement>((_, ref) => {
-	const [skillList, setSkillList] = useState<SkillList>(skills[0]);
+	const [skillList, setSkillList] = useState<SkillList>(
+		content.skills.categories[0]
+	);
 	return (
 		<section id="competences" className="skills banner" ref={ref}>
 			<Container>
 				<Row className="section-title">
 					<div className="col-12">
-						<h1>Mes compétences</h1>
+						<h1>{content.skills.title}</h1>
 					</div>
 				</Row>
 				<Row
 					className="align-items-end justify-content-center pb-0 gap-2 skills-nav"
 					style={{ height: '90px' }}
 				>
-					{skills.map(s => (
+					{content.skills.categories.map(s => (
 						<div
 							className={`col py-1 skills-nav-item ${skillList.title == s.title ? 'active' : ''}`}
 							key={s.title}

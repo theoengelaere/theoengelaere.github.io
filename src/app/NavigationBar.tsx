@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
 import '../css/navigationBar.css';
+import content from '../content/portfolio.json';
 
 type Section = {
 	label: string;
@@ -54,9 +55,10 @@ const NavigationBar = ({
 				expanded={isExpanded}
 			>
 				<Container className="nav-bar-main-container">
-					<Navbar.Brand href="/">Théo Engelaere</Navbar.Brand>
+					<Navbar.Brand href="/">{content.home.brand}</Navbar.Brand>
 					<Navbar.Toggle
 						aria-controls="basic-navbar-nav"
+						aria-label={content.home.menuLabel}
 						onClick={() => setIsExpanded(!isExpanded)}
 					>
 						<span className="navbar-toggler-icon"></span>

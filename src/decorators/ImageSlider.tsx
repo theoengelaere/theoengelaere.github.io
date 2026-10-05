@@ -5,9 +5,17 @@ import '../css/imageOverlay.css';
 
 type ImageSliderProps = {
 	imageUrls: string[];
+	alt: string;
+	previousLabel: string;
+	nextLabel: string;
 };
 
-export default function ImageSlider({ imageUrls }: ImageSliderProps) {
+export default function ImageSlider({
+	imageUrls,
+	alt,
+	previousLabel,
+	nextLabel,
+}: ImageSliderProps) {
 	const [imageIndex, setImageIndex] = useState<number>(0);
 	const [overlayVisibility, setOverlayVisibility] = useState<boolean>(false);
 
@@ -29,13 +37,14 @@ export default function ImageSlider({ imageUrls }: ImageSliderProps) {
 		<div style={{ position: 'relative' }} className="image-overlay-container">
 			<img
 				src={imageUrls[imageIndex]}
-				alt="IMAGE"
+				alt={alt}
 				className="img-slider-img zoomable"
 				onClick={() => setOverlayVisibility(true)}
 			/>
 			<button
 				className="img-slider-btn prev"
 				style={{ left: 0 }}
+				aria-label={previousLabel}
 				onClick={showPrevImage}
 			>
 				<ArrowLeft />
@@ -43,6 +52,7 @@ export default function ImageSlider({ imageUrls }: ImageSliderProps) {
 			<button
 				className="img-slider-btn next"
 				style={{ right: 0 }}
+				aria-label={nextLabel}
 				onClick={showNextImage}
 			>
 				<ArrowRight />
@@ -65,7 +75,7 @@ export default function ImageSlider({ imageUrls }: ImageSliderProps) {
 						</button> */}
 						<img
 							src={imageUrls[imageIndex]}
-							alt="IMAGE"
+							alt={alt}
 							className="image-full-screen"
 						/>
 					</div>

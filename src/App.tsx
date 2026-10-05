@@ -1,4 +1,4 @@
-import NavigationBar, { Section } from './app/NavigationBar';
+import NavigationBar from './app/NavigationBar';
 import Home from './features/home/Home';
 import Projects from './features/projects/Projects';
 import Contact from './features/contact/Contact';
@@ -7,6 +7,7 @@ import About from './features/about/About';
 import Carrer from './features/experiences/Career';
 import { useRef, useEffect } from 'react';
 import Skills from './features/skills/Skills2';
+import content from './content/portfolio.json';
 
 // const sections: Section[] = [
 // 	{ route: '/', label: 'A Propos', mainElement: <Home /> },
@@ -15,22 +16,18 @@ import Skills from './features/skills/Skills2';
 // 	{ route: '/competences', label: 'Compétences', mainElement: <Experiences /> },
 // ];
 
-const sections: Section[] = [
-	{ link: 'aPropos', label: 'A Propos' },
-	{ link: 'competences', label: 'Compétences' },
-	{ link: 'projets', label: 'Projets' },
-	{ link: 'parcours', label: 'Parcours' },
-];
-
 function App() {
 	const sectionRefs = useRef<HTMLDivElement[]>([]);
 
 	useEffect(() => {
-		document.title = 'Théo Engelaere - Portfolio';
+		document.title = content.home.pageTitle;
 	}, []);
 	return (
 		<>
-			<NavigationBar sections={sections} sectionRefs={sectionRefs} />
+			<NavigationBar
+				sections={content.home.navigation}
+				sectionRefs={sectionRefs}
+			/>
 			<Container className="features">
 				<Home />
 				<About ref={el => (sectionRefs.current[0] = el!)} />

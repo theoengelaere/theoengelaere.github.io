@@ -8,6 +8,7 @@ import {
 import arrow1 from '../assets/img/arrow1.svg';
 import arrow2 from '../assets/img/arrow2.svg';
 import '../css/slider.css';
+import content from '../content/portfolio.json';
 
 type SliderProps = {
 	firstCardIdx?: number;
@@ -144,11 +145,19 @@ export default function Slider({
 			</div>
 			{enableManualMode && (
 				<>
-					<button id="next" onClick={() => swipeCard(1, 'manual')}>
-						<img src={arrow2} alt=">" />
+					<button
+						id="next"
+						aria-label={content.skills.nextLabel}
+						onClick={() => swipeCard(1, 'manual')}
+					>
+						<img src={arrow2} alt="" />
 					</button>
-					<button id="prev" onClick={() => swipeCard(-1, 'manual')}>
-						<img src={arrow1} alt="<" />
+					<button
+						id="prev"
+						aria-label={content.skills.previousLabel}
+						onClick={() => swipeCard(-1, 'manual')}
+					>
+						<img src={arrow1} alt="" />
 					</button>
 				</>
 			)}

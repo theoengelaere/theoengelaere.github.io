@@ -10,6 +10,7 @@ import '../../css/home.css';
 import '../../css/navigationBar.css';
 import linkedin from '../../assets/img/logos/linkedin_logo.png';
 import FlowField from '../../decorators/flowfield/FlowFiled';
+import content from '../../content/portfolio.json';
 
 export default function Home() {
 	const homeRef = useRef(null);
@@ -17,8 +18,8 @@ export default function Home() {
 
 	function downloadCV() {
 		const link = document.createElement('a');
-		link.href = '/CV_Theo_Engelaere_2025.pdf';
-		link.download = 'CV_Theo_Engelaere_2025.pdf';
+		link.href = content.home.hero.cvPath;
+		link.download = content.home.hero.cvFileName;
 		link.target = '_blank';
 		link.click();
 	}
@@ -44,15 +45,12 @@ export default function Home() {
 				<Container>
 					<Row>
 						<div className="col-12">
-							<h1>Etudiant en 3e année de BUT Informatique</h1>
+							<h1>{content.home.hero.title}</h1>
 						</div>
 					</Row>
 					<Row>
 						<div className="col-12">
-							<h3>
-								Je souhaite poursuivre mes études en master ou écoles
-								d'ingénieur
-							</h3>
+							<h3>{content.home.hero.subtitle}</h3>
 						</div>
 					</Row>
 					<Row>
@@ -60,18 +58,15 @@ export default function Home() {
 							<span className="home-buttons">
 								<button
 									onClick={() => {
-										window.open(
-											'https://www.linkedin.com/in/theo-engelaere',
-											'_blank'
-										);
+										window.open(content.home.hero.linkedinUrl, '_blank');
 									}}
 								>
-									<img src={linkedin} alt="Logo" />
-									<span>Me Suivre</span>
+									<img src={linkedin} alt="" />
+									<span>{content.home.hero.linkedinLabel}</span>
 								</button>
 								<button onClick={downloadCV}>
 									<FileEarmarkArrowDown />
-									<span>Télécharger mon CV</span>
+									<span>{content.home.hero.cvLabel}</span>
 								</button>
 								<button
 									onClick={() => {
@@ -81,14 +76,14 @@ export default function Home() {
 									}}
 								>
 									<Envelope />
-									<span>Me Contacter</span>
+									<span>{content.home.hero.contactLabel}</span>
 								</button>
 							</span>
 						</div>
 					</Row>
 				</Container>
 				<div className="next">
-					<span>A propos de moi</span>
+					<span>{content.home.hero.aboutLabel}</span>
 					<a href="#aPropos">
 						<ArrowDown />
 					</a>
